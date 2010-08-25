@@ -1,0 +1,19 @@
+/* ‘он */
+
+.footerlinks {
+	clear:both;
+	w-idth:100%;
+	h-eight:40px;
+}
+
+.footerlinks div{
+	b-ackground:#C8A2C8;
+	f-ont:Bold Small Tahoma;
+	float:left;
+	width:25%;
+	text-align:center;
+	border:dashed 0px;
+	border-color:#B9B #DBD #DBD #B9B;
+}
+
+
