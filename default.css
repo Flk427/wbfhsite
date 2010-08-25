@@ -60,7 +60,7 @@ img.right {
 #header {
 	width: 1000px;
 	margin: 0 auto;
-	height: 193px;
+	h-eight: 123px;
 	b-ackground: url(images/img02.jpg) repeat-x left top;
 }
 
@@ -68,9 +68,9 @@ img.right {
 
 #logo {
 	width: 970px;
-	height: 150px;
-	margin: 0 auto;
-	padding: 0 10px;
+	height: 70px;
+	m-argin: 0 auto;
+	p-adding: 0 10px;
 	background:url("images/freehost.gif") no-repeat;
 }
 
@@ -105,13 +105,13 @@ img.right {
 #menu {
 	width: 1000px;
 	margin: 0 auto;
-	padding: 10px 0;
-	height: 30px;
+	p-adding: 10px 0;
+	h-eight: 30px;
 }
 
 #menu ul {
 	margin: 0;
-	padding: 0;
+	padding: 10px 0px 20px 0px;
 	list-style: none;
 }
 
@@ -123,7 +123,8 @@ img.right {
 	display: block;
 	float: left;
 	margin: 0 3px 0 0;
-	padding: 6px 15px 10px 20px;
+	p-adding: 6px 15px 10px 20px;
+	padding: 0px 15px;
 	border-right: 1px #000000 solid;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -153,6 +154,7 @@ img.right {
 	width: 1000px;
 	margin: 0 auto;
 	padding: 20px 20px 20px 20px;
+	padding: 0px 15px;
 	color: #000;
 	background: #FFF; /*#110E0F*/;
 }
@@ -175,7 +177,7 @@ img.right {
 }
 
 .post {
-	padding-bottom: 15px;
+	padding: 10px 220px 0px 220px;
 	line-height: 200%;
 }
 
@@ -249,7 +251,7 @@ img.right {
 }
 
 .sidebar li {
-	padding: 0 0 20px 0;
+	p-adding: 0 0 10px 0;
 }
 
 .sidebar li ul {
@@ -257,17 +259,22 @@ img.right {
 
 .sidebar li li {
 	margin: 0 20px 0 15px;
-	padding: 8px 0px;
+	p-adding: 8px 0px;
+	padding-top: 8px;
 	border-bottom: 1px #423525 dashed;
+	b-order-top: 1px #423525 dashed;
 }
-
 
 .sidebar li h2 {
 	margin: 0 0 0 0;
-	padding: 10px 15px;
+	p-adding: 10px 15px;
+	p-adding: 5px 0px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	b-ackground: #000000;
 	font-size: 13px;
-	color: #AF9371;
+	/*color: #AF9371;*/
+	color:#546992;
 }
 
 .sidebar a {

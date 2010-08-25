@@ -1,3 +1,8 @@
+
+#h_video img {
+	border:1px solid #000;
+}
+
 /* ‘он */
 
 .footerlinks {
@@ -36,7 +41,8 @@
 	display: block;
 	float: left;
 	margin: 0 3px 0 0;
-	padding: 6px 15px 10px 20px;
+	p-adding: 6px 15px 10px 20px;
+	padding: 0px 15px;
 	border-right: 1px #000000 solid;
 	text-decoration: none;
 	text-transform: uppercase;
