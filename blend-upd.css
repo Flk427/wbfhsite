@@ -6,6 +6,7 @@
 	h-eight:40px;
 }
 
+/*
 .footerlinks div{
 	b-ackground:#C8A2C8;
 	f-ont:Bold Small Tahoma;
@@ -15,5 +16,32 @@
 	border:dashed 0px;
 	border-color:#B9B #DBD #DBD #B9B;
 }
+*/
 
+.footerlinks li {
+	display: block;
+	float: left;
+	m-argin: 0 3px 0 0;
+	p-adding: 6px 15px 10px 20px;
+	b-order-right: 1px #000000 solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	width:25%;
+}
+
+#menu li.path {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 6px 15px 10px 20px;
+	border-right: 1px #000000 solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
 
