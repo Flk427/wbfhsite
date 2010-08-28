@@ -58,8 +58,8 @@ img.right {
 }
 
 #header {
-	width: 1000px;
-	margin: 0 auto;
+	w-idth: 1000px;
+	m-argin: 0 auto;
 	h-eight: 123px;
 	b-ackground: url(images/img02.jpg) repeat-x left top;
 }
@@ -67,7 +67,7 @@ img.right {
 /* Header */
 
 #logo {
-	width: 970px;
+	w-idth: 970px;
 	height: 60px;
 	m-argin: 0 auto;
 	p-adding: 0 10px;
@@ -146,15 +146,17 @@ img.right {
 /* Wrapper */
 
 #wrapper {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 /* Page */
 
 #page {
-	width: 1000px;
-	margin: 0 auto;
-	padding: 20px 20px 20px 20px;
-	padding: 0px 15px;
+	w-idth: 1000px;
+	m-argin: 0 auto;
+	p-adding: 20px 20px 20px 20px;
+	p-adding: 0px 15px;
 	color: #000;
 	background: #FFF; /*#110E0F*/;
 }
@@ -177,7 +179,7 @@ img.right {
 }
 
 .post {
-	padding: 10px 220px 0px 220px;
+	padding: 1px 220px;
 	line-height: 200%;
 }
 
@@ -239,7 +241,7 @@ img.right {
 
 .sidebar {
 	float: left;
-	width: 220px;
+	width: 210px;
 	padding: 0;
 	font-size: 12px;
 }
@@ -362,9 +364,9 @@ img.right {
 /* Footer */
 
 #footer {
-	width: 1000px;
-	height: 55px;
-	margin: 0 auto;
+	w-idth: 1000px;
+	h-eight: 55px;
+	m-argin: 0 auto;
 	b-ackground: #514334;
 	b-ackground: #3E5886;
 	border-top: 2px solid #423525;
