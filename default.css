@@ -8,10 +8,12 @@ body {
 	margin: 0;
 	padding: 0;
 	b-ackground: #544C40 url(images/img01.jpg) repeat left top;
-	background: #5DA8DA url(images/wbbg.jpg) repeat left top;
+	b-ackground: #5DA8DA url(images/wbbg.jpg) repeat left top;
+	background: #29361C url(images/wbbg.jpg) repeat-x left top;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
+	min-width:800px;
 }
 
 h1, h2, h3 {
@@ -103,7 +105,7 @@ img.right {
 /* Menu */
 
 #menu {
-	width: 1000px;
+	/*width: 1000px;*/
 	margin: 0 auto;
 	p-adding: 10px 0;
 	h-eight: 30px;
@@ -146,8 +148,9 @@ img.right {
 /* Wrapper */
 
 #wrapper {
-	width: 1000px;
-	margin: 0 auto;
+	/*width: 1000px;
+	margin: 0 auto;*/
+	margin: 0 10px;
 }
 
 /* Page */
@@ -175,7 +178,7 @@ img.right {
 
 #content {
 	float: left;
-	width: 560px;
+	/*width: 560px;*/
 }
 
 .post {
