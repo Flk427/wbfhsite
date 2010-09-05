@@ -6,12 +6,29 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Проект нового сайта авиасимулятора WarBirds FreeHost">
 	<meta name="keywords" content="WarBirds FreeHost бесплатно free">
-	<link type="text/css" rel="StyleSheet" href="default.css">
-	<link type="text/css" rel="StyleSheet" href="wbfh.css">
+
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.js"></script>
-<script type="text/javascript" src="scripts/jcarousellite_1.0.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<!-- Подключили карусель -->
+	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+
+	<link type="text/css" rel="StyleSheet" href="default.css">
+	<link rel="stylesheet" type="text/css" href="scripts/skins/wbfh/skin.css" />
+	<link type="text/css" rel="StyleSheet" href="wbfh.css">
+
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#mycarousel').jcarousel({
+        // Configuration goes here
+        scroll: 1,
+        wrap: "circular",
+    });
+});
+</script>
+
+<!--<script type="text/javascript" src="scripts/jcarousellite_1.0.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 
@@ -24,7 +41,7 @@ $(function() {
 
 //alert('Hello, world');
 });
-</script>
+</script>-->
 
 <script type="text/javascript">
 
@@ -59,25 +76,37 @@ $(function() {
 
 <div style="clear:both;">&nbsp;</div>
 
+    <ul id="mycarousel" class="jcarousel-skin-tango">
+		<li><object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object></li>
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
+		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
+<!--
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
+		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
+		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
+		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
+-->
+    </ul>
+
+<!--
 <div class="anyClass" styile="width:100px; display:none;">
 <button class="prev"><<</button>
 <button class="next">>></button>
     <ul>
-		<!--
-    	<li><object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object></li>
-        <li><img src="images/shots/Scr0000-0.jpg" alt="" width="240" height="180" ></li>
-        <li><img src="images/shots/Scr0003.jpg" alt="" width="240" height="180" ></li>
-        <li><img src="images/shots/scr0005.jpg" alt="" width="240" height="180" ></li>
-        <li><img src="images/shots/scr0005.jpg" alt="" width="240" height="180" ></li>
-        <li><img src="images/shots/Scr0003.jpg" alt="" width="240" height="180" ></li>
-        <li><img src="images/shots/Scr0003.jpg" alt="" width="240" height="180" ></li>
-        -->
 		<li><object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object></li>
 		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
 		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
 		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
     </ul>
 </div>
+        -->
 	
 	<div id="h_video" style="display:none;"><!-- Video, scr. -->
 		<!--<div id="h_video_container">-->
@@ -98,9 +127,21 @@ $(function() {
 
 	<div id="menu">
 		<ul id="feed" s_tyle="float:left;">
-			<li class="path"><h1>WarBirds FreeHost</h1></li>
+			<!-- <li class="path"><h1>WarBirds FreeHost</h1></li> -->
+			<li class="path"><h1>War Birds Free Host - Online cимулятор войны в воздухе.</h1></li>
+			
 			<li style="float:right;">
-				<form method="get" name="q" action="http://google.com/">Поиск <input type="text"></form>
+			<!-- http://www.google.ru/search?hl=ru&newwindow=1&q=warbirds+site%3Aflk.fatal.ru&aq=f&aqi=&aql=&oq=&gs_rfai= -->
+				<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
+					<input type="hidden" name="hl" value="ru">
+					<input type="hidden" name="sitesearch" value="wbfree.net">
+					<input type="hidden" name="newwindow" value="1">
+					<input type="hidden" name="aq" value="f">
+					<input type="hidden" name="aqi" value="">
+					<input type="hidden" name="aql" value="">
+					<input type="hidden" name="oq" value="">
+					<input type="hidden" name="gs_rfai" value="">
+				</form>
 			</li>
 		</ul>
 	</div>
@@ -209,16 +250,20 @@ $(function() {
 </div> <!-- menu -->
 
 <div class="post">
-<p><h3>War Birds Free Host - Online cимулятор войны в воздухе.
-Разработчик: iEntertainment Network</h3></p>
 
-<p>Издатель: Atari</p>
+<div style="width: 400px; float: right;">
+<span style="position: relative; top: 70px; left: 150px; font-size: 3em; font-weight: 800;">WarBirds</span>
+<span style="position: relative; top: 100px; left: -30px; font-size: 1.5em;">Скачать бесплатно</span>
+<img src="images/download-button-primary.png">
+</div>
 
-<p>Год выпуска: 2001</p>
+<!--<p><h3>War Birds Free Host - Online cимулятор войны в воздухе.</h3></p>-->
 
-<p>Жанр: Авиасимуляторы</p>
-
-<p>Платформа: От Win95 до Win7</p>
+<p><br>Разработчик: iEntertainment Network<br>
+Издатель: Atari<br>
+Год выпуска: 2001<br>
+Жанр: Авиасимуляторы<br>
+Платформа: От Win95 до Win7</p>
 
 <p><h3>Системные требования:</h3></p>
 
