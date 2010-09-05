@@ -7,6 +7,14 @@ body {
 	min-width:800px;
 }
 
+.post a {
+	text-decoration: none;
+	color: #546992;
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+	font-size: 13px;
+	font-weight: 600;
+}
+
 em {
 	font-weight: 800;
 }
@@ -77,6 +85,10 @@ h1 {
 	padding-left:10pt;
 }
 
+/* Хак от падения IE6 */
+.post p strong:first-letter {
+	padding-left:0;
+}
 
 /**
  * Overwrite for having a carousel with dynamic width.

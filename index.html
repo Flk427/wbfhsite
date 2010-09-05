@@ -10,7 +10,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-	<!-- Подключили карусель -->
 	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
 
 	<link type="text/css" rel="StyleSheet" href="default.css">
@@ -23,28 +22,12 @@ jQuery(document).ready(function() {
     jQuery('#mycarousel').jcarousel({
         // Configuration goes here
         scroll: 1,
-        wrap: "circular",
+        wrap: "circular"
     });
 });
 </script>
 
-<!--<script type="text/javascript" src="scripts/jcarousellite_1.0.1.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-
-$(function() {
-    $(".anyClass").jCarouselLite({
-        btnNext: ".next",
-        btnPrev: ".prev"
-    });
-});
-
-//alert('Hello, world');
-});
-</script>-->
-
-<script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-3557915-1']);
   _gaq.push(['_trackPageview']);
@@ -62,15 +45,10 @@ $(function() {
 
 <div id="bg">
 
-<!--<div id="data">-->
+<div id="wrapper">
 
-<div id="wrapper"><!-- wrapper - тело с л. и п. меню - wrapper -->
-
-<!-- start header -->
 <div id="header">
 	<div id="logo">
-		<!--<img src="images/znachek2.jpg" width="100px" height="100px"></img>-->
-		<!--Lang select: Русский язык, Английский, Немецкий, Польский, Португальский-->
 		<img style="float:right;padding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90px" height="40px"></img>
 	</div>
 
@@ -82,40 +60,9 @@ $(function() {
 		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
 		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
 		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-<!--
 		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
--->
     </ul>
 
-<!--
-<div class="anyClass" styile="width:100px; display:none;">
-<button class="prev"><<</button>
-<button class="next">>></button>
-    <ul>
-		<li><object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
-    </ul>
-</div>
-        -->
-	
-	<div id="h_video" style="display:none;"><!-- Video, scr. -->
-		<!--<div id="h_video_container">-->
-			<object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object>
-			<a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a>
-			<a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a>
-			<a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a>
-		<!--</div>-->
-	</div>
 	<div id="menu">
 		<ul id="main">
 			<li class="current_page_item"><a href="#">Новичкам</a></li>
@@ -127,11 +74,8 @@ $(function() {
 
 	<div id="menu">
 		<ul id="feed" s_tyle="float:left;">
-			<!-- <li class="path"><h1>WarBirds FreeHost</h1></li> -->
-			<li class="path"><h1>War Birds Free Host - Online cимулятор войны в воздухе.</h1></li>
-			
+			<li class="path"><h1>WarBirds FreeHost</h1></li>			
 			<li style="float:right;">
-			<!-- http://www.google.ru/search?hl=ru&newwindow=1&q=warbirds+site%3Aflk.fatal.ru&aq=f&aqi=&aql=&oq=&gs_rfai= -->
 				<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
 					<input type="hidden" name="hl" value="ru">
 					<input type="hidden" name="sitesearch" value="wbfree.net">
@@ -257,9 +201,8 @@ $(function() {
 <img src="images/download-button-primary.png">
 </div>
 
-<!--<p><h3>War Birds Free Host - Online cимулятор войны в воздухе.</h3></p>-->
-
-<p><br>Разработчик: iEntertainment Network<br>
+<p><h3>War Birds Free Host - Online cимулятор войны в воздухе.</h3>
+Разработчик: iEntertainment Network<br>
 Издатель: Atari<br>
 Год выпуска: 2001<br>
 Жанр: Авиасимуляторы<br>
@@ -271,7 +214,7 @@ $(function() {
 Язык интерфейса: только английский</p>
 
 <p>Сайт игры: <a href="http://www.wbfree.net/" title="Сайт игры WarBirds FreeHost">http://www.wbfree.net/</a></p>
-<p>Форум игры: <a href="http://forum.wbfree.net/" title="Форум игры WarBirds FreeHost">http://www.wbfree.net/</a></p>
+<p>Форум игры: <a href="http://forum.wbfree.net/" title="Форум игры WarBirds FreeHost">http://forum.wbfree.net/</a></p>
 
 <p><h3>Описание:</h3></p>
 
@@ -304,7 +247,7 @@ $(function() {
 
 <p>Для новичков лучше освоить менее мощные, но более легкие в управлении самолеты типа Spitfire, A6M “Zero”, По мере приобретения навыков пилотирования и стрельбы пересаживайтесь на советские Яки, немецкие Мессершмитты, английские Тайфуны, Темпесты, японские Ki...</p>
 
-<p><h3>Дополнительная информация: Прочтите всё до конца.</h3></p>
+<p><strong>Дополнительная информация: Прочтите всё до конца.</strong></p>
 
 <p><strong>Это важно!</strong></p>
 
@@ -359,6 +302,9 @@ $(function() {
 Разрешение проблем находится здесь: <a target="_blank" href="http://www.martin-struwe.de/wiki/index.php/Troubleshooting">http://www.martin-struwe.de/wiki/index.php/Troubleshooting</a></p>
 
 <p>До скорой встречи в небе и да пребудет с вами удача!</p>
+
+<div style="clear:both;"><br><p style="text-align:center;"><a href="#">Как скачать и установить...</a></p></div>
+
 </div>
 
 <div style="clear:both;">&nbsp;</div>
