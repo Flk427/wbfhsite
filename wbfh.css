@@ -1,10 +1,30 @@
 body {
-	b-ackground: #29361C url(images/wbbg2.jpg) repeat-x left top;
-	background: #BBB;
+	b-ackground: #29361C url(images/wbbg2.jpg) repeat-x left center;
+	background: #080B12 url(images/67c8c8ecd39c.jpg) no-repeat center top;
+	b-ackground: #BBB;
+	b-ackground: #080B12;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #FFFFFF;
 	min-width:800px;
+}
+
+#wrapper {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.sidebar li h2 {
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+}
+
+#sidebar1 {
+	width: 180px;
+}
+
+.sidebar li li {
+	p-adding-top: 8px;
+	b-order-bottom: 1px #423525 dashed;
 }
 
 .post a {
@@ -55,10 +75,69 @@ h1 {
 	b-order-right: 1px #000000 solid;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	color: #FFFFFF;
+	font-weight:600;
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+	font-size: 13px;
+	color: #546992;
 	width:25%;
+}
+
+#footer a {
+	color:#546992;
+}
+
+
+/* Разделы */
+
+#section ul {
+	list-style:none outside none;
+}
+
+#section li {
+	display: block;
+	float: left;
+	m-argin: 0 3px 0 0;
+	p-adding: 6px 15px 10px 20px;
+	b-order-right: 1px #000000 solid;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:600;
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+	font-size: 13px;
+	color: #546992;
+	width:200px;
+}
+
+#section a {
+	font-weight:600;
+	font-size: 13px;
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+}
+
+#section #main {
+	margin: 0 auto;
+}
+
+#main {
+	width:600px;
+}
+
+
+#section a {
+	font-weight:600;
+	font-size: 13px;
+	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
+
+	display: block;
+	float: left;
+	m-argin: 0 3px 0 0;
+	p-adding: 6px 15px 10px 20px;
+	p-adding: 0px 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	m-argin: 0 auto;
+	w-idth:100%;
 }
 
 #menu li.path {
@@ -105,8 +184,10 @@ h1 {
     b-ackground: #F0F6F9;
     b-order: 1px solid #346F97;
 
-    border: 0;
+    b-order: 0;
+    border: 1px solid #888;
 	background: none;
+	o-pacity: 0.2;
 	height: 220px;
 }
 
