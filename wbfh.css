@@ -14,6 +14,19 @@ body {
 	f-ilter: alpha(opacity=80);
 }
 
+#logo {
+	w-idth: 970px;
+	height: 80px;
+	m-argin: 0 auto;
+	p-adding: 0 10px;
+	b-ackground:url("images/freehost.png") no-repeat;
+}
+
+#logo img {
+	margin-top:10px;
+	margin-left:10px;
+}
+
 .sidebar a {
 	color:#546992;
 }
