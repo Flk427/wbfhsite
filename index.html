@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
 
 	<link type="text/css" rel="StyleSheet" href="default.css">
-	<link rel="stylesheet" type="text/css" href="scripts/skins/wbfh/skin.css" />
+	<link rel="stylesheet" type="text/css" href="scripts/skins/wbfh/skin.css">
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
 
 
@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
 
 <div id="header">
 	<div id="logo">
-		<img style="float:right;padding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90px" height="40px"></img>
+		<img style="float:right;padding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90" height="40">
 	</div>
 
 <div style="clear:both;">&nbsp;</div>
@@ -61,12 +61,19 @@ jQuery(document).ready(function() {
 -->
 
     <ul id="mycarousel" class="jcarousel-skin-tango">
-		<li><object width="240" height="180"><param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="240" height="180"></embed></object></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></img></a></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></img></a></li>
+		<li>
+			<object width="240" height="180">
+				<param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU">
+				<param name="allowFullScreen" value="true">
+				<param name="allowscriptaccess" value="always">
+				<embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" style="width:240px; height:180px"></embed>
+			</object>
+		</li>
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></a></li>
+		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></a></li>
+		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></a></li>
+		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></a></li>
     </ul>
 
 	<div id="section">
@@ -79,7 +86,7 @@ jQuery(document).ready(function() {
 	<div style="clear:both;"></div>
 
 	<div id="menu">
-		<ul id="feed" s_tyle="float:left;">
+		<ul id="feed">
 			<li class="path"><h1>Новичкам :: Что это такое</h1></li>			
 			<li style="float:right;">
 				<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
@@ -106,7 +113,7 @@ jQuery(document).ready(function() {
 <div id="sidebar1" class="sidebar" style="padding-left:10px;">
 			<ul>
 				<li>
-					<a href="#"><h2>Что это такое?</h2></a>
+					<h2><a href="#">Что это такое?</a></h2>
 					<ul> <!--style="display:none;"-->
 						<li><a href="#">Об игре</a></li>
 						<li><a href="#">О сервере</a></li>
@@ -115,7 +122,7 @@ jQuery(document).ready(function() {
 					</ul>
 				</li>
 				<li>
-					<a href="#"><h2>Как скачать и установить</h2></a>
+					<h2><a href="#">Как скачать и установить</a></h2>
 					<ul style="display:none;">
 						<li><a href="#">Скачать</a></li>
 						<li><a href="#">Установка</a></li>
@@ -123,28 +130,28 @@ jQuery(document).ready(function() {
 					</ul>
 				</li>
 				<li>
-					<a href="#"><h2>Как взлететь</h2></a>
+					<h2><a href="#">Как взлететь</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Управление</h2></a>
+					<h2><a href="#">Управление</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Основные манёвры</h2></a>
+					<h2><a href="#">Основные манёвры</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Основы тактики</h2></a>
+					<h2><a href="#">Основы тактики</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Самолёты</h2></a>
+					<h2><a href="#">Самолёты</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Форум</h2></a>
+					<h2><a href="#">Форум</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>Эскадрильи</h2></a>
+					<h2><a href="#">Эскадрильи</a></h2>
 				</li>
 				<li>
-					<a href="#"><h2>FAQ</h2></a>
+					<h2><a href="#">FAQ</a></h2>
 				</li>
 			</ul>
 </div> <!-- menu -->
@@ -152,22 +159,22 @@ jQuery(document).ready(function() {
 <div id="sidebar2" class="sidebar" style="padding-left:10px;">
 			<ul>
 				<li>
+					<h2><a href="#">Новости</a></h2>
 					<ul>
-						<a href="#"><h2>Новости</h2></a>
 						<li><a href="#">Новость №1</a></li>
 						<li><a href="#">Новость №2</a></li>
 						<li><a href="#">Новость №3</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="http://forum.wbfree.net/" title="Перейти на форум"><h2>Форум</h2></a>
+					<h2><a href="http://forum.wbfree.net/" title="Перейти на форум">Форум</a></h2>
 					<ul>
 						<li><a href="#">планы на открытую бету 1.68</a></li>
 						<li><a href="#">обсуждение проекта нового сайта wbfree.net</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="#"><h2>Треки</h2></a>
+					<h2><a href="#">Треки</a></h2>
 					<ul>
 						<li><a href="#">Лучший трек №1</a></li>
 						<li><a href="#">Лучший трек №2</a></li>
@@ -177,7 +184,7 @@ jQuery(document).ready(function() {
 					</ul>
 				</li>
 				<li>
-					<a href="#"><h2>Рейтинги пилотов</h2></a>
+					<h2><a href="#">Рейтинги пилотов</a></h2>
 					<ul>
 						<li><a href="#">Пилот №1</a></li>
 						<li><a href="#">Пилот №2</a></li>
@@ -187,7 +194,7 @@ jQuery(document).ready(function() {
 					</ul>
 				</li>
 				<li>
-					<a href="#"><h2>Рейтинги эскадрилий</h2></a>
+					<h2><a href="#">Рейтинги эскадрилий</a></h2>
 					<ul>
 						<li><a href="#">Эскадрилия №1</a></li>
 						<li><a href="#">Эскадрилия №2</a></li>
@@ -204,17 +211,17 @@ jQuery(document).ready(function() {
 <div style="width: 400px; float: right;">
 <span style="position: relative; top: 70px; left: 150px; font-size: 3em; font-weight: 800;">WarBirds</span>
 <span style="position: relative; top: 100px; left: -30px; font-size: 1.5em;">Скачать бесплатно</span>
-<img src="images/download-button-primary.png">
+<img src="images/download-button-primary.png" alt="Скачать бесплатно">
 </div>
 
-<p><h3>War Birds Free Host - Online cимулятор войны в воздухе.</h3>
-Разработчик: iEntertainment Network<br>
+<h3>War Birds Free Host - Online cимулятор войны в воздухе.</h3>
+<p>Разработчик: iEntertainment Network<br>
 Издатель: Atari<br>
 Год выпуска: 2001<br>
 Жанр: Авиасимуляторы<br>
 Платформа: От Win95 до Win7</p>
 
-<p><h3>Системные требования:</h3></p>
+<h3>Системные требования:</h3>
 
 <p>Требования к компьютеру - Windows’95/98. Можно и WinME, Win2000 и WinXp. Память - 32 мегабайта, но лучше 64. Видеокарта - с 2 мегабайтами памяти для software режима графики (без применения графического ускорителя). Коннект нужен не менее 19200 бит/с. По объему игра занимает от 20 до 200 мегабайт, в зависимости от добавления изображений кабин самолётов, набора звукового сопровождения самолётов. Также вам потребуется запустить так называемый FreeHost Launcher (небольшой пакет размером около двух мегабайт), при помощи которого вы будете создавать себе ник и подключаться к самому серверу. В данном пакете FreeHost Launcher уже встроен и запускается автоматически.
 Язык интерфейса: только английский</p>
@@ -222,16 +229,15 @@ jQuery(document).ready(function() {
 <p>Сайт игры: <a href="http://www.wbfree.net/" title="Сайт игры WarBirds FreeHost">http://www.wbfree.net/</a></p>
 <p>Форум игры: <a href="http://forum.wbfree.net/" title="Форум игры WarBirds FreeHost">http://forum.wbfree.net/</a></p>
 
-<p><h3>Описание:</h3></p>
+<h3>Описание:</h3>
 
 <p>Структура игры: игроки делятся на 2 лагеря - золотые и красные. И сами решают, за какой цвет они будут играть. Красные представлены самолётами союзников: СССР, Англии, Америки. Золотые, соответственно Германия, Япония, Италия. Все, кто не твоего цвета, - враги. Kill ’em all! Не спешите сразу же надевать шлемофон и прыгать в кабину. Сначала поинтересуйтесь у своих, где война. А затем переходите на поле, ближайшее к месту боев. Это можно сделать в меню Select -> Field, ткнув мышкой в то поле, на которое можно переместиться. Выберите самолёт, нажмите кнопку "Fly" и вы окажетесь в кабине. Нажмите “E”. Можете взлетать. Если не получается сесть в кабину самолёта, значит это поле «закрыли», т. е. его разбомбили до такой кондиции, что взлет с поля уже невозможен.</p>
 
-<p><h3>Цель игры:</h3></p>
+<h3>Цель игры:</h3>
 
 <p>Получить фан. Это достижимо разнообразными линиями поведения в игре: штурмовики хотят захватить у противника все его поля. Истребители хотят им помешать. Сверху летают бомбардировщики и помогают штурмовикам. И, конечно же, истребители бьют истребителей. Но победителем объявляется та сторона, которая захватила все поля у противника, кроме последнего. После этого все поля возвращаются в свое начальное состояние, и игра продолжается. Это так называемый reset.
 В игре сейчас 120 самолетов (в том числе модификации):</p>
 
-<p>
 <table border="1" width="100%">
 	<tr><td>Советские:</td>
 		<td>
@@ -274,7 +280,7 @@ jQuery(document).ready(function() {
 Управление джипом: <em>Ctrl Q</em>, <em>W</em>, <em>E</em>, <em>A</em>, <em>S</em>, <em>D</em>, <em>Z</em>, <em>X</em>, <em>C</em>.
 Чтобы выйти из джипа нажмите три раза <em>Enter</em></p>
 
-<p><h3>Как работать бомбардировщиком в WarBirds FreeHost:</h3></p>
+<h3>Как работать бомбардировщиком в WarBirds FreeHost:</h3>
 <p>Ставишь самолёт на взлётную полосу. Нажимаешь <em>"E"</em>. Все двигатели запустились, и ты погнал по взлётной полосе.
 При взлёте не колбасит. Нет необходимости фиксировать хвостовое колесо. Шасси убираются кнопкой <em>G</em>.
 Фиксируешь набор высоты в автопилоте нажатием <em>"Ctrl X"</em>.
@@ -304,7 +310,7 @@ jQuery(document).ready(function() {
 
 <p>Полное руководство по игре находится здесь: <a target="_blank" href="http://www.martin-struwe.de/wiki/index.php/Main_Page">http://www.martin-struwe.de/wiki/index.php/Main_Page</a></p>
 
-<p>Автоматический перевод на русский здесь: <a target="_blank" href="http://translate.google.com/translate_c?hl=ru&sl=en&tl=ru&u=http://www.martin-struwe.de/wiki/index.php/Main_Page&prev">http://translate.google.com/translate_c?hl=ru&sl=en&tl=ru&u=http://www.martin-struwe.de/wiki/index.php/Main_Page&prev</a>
+<p>Автоматический перевод на русский здесь: <a target="_blank" href="http://translate.google.com/translate_c?hl=ru&amp;sl=en&amp;tl=ru&amp;u=http://www.martin-struwe.de/wiki/index.php/Main_Page&amp;prev">http://translate.google.com/translate_c?hl=ru&amp;sl=en&amp;tl=ru&amp;u=http://www.martin-struwe.de/wiki/index.php/Main_Page&amp;prev</a>
 Разрешение проблем находится здесь: <a target="_blank" href="http://www.martin-struwe.de/wiki/index.php/Troubleshooting">http://www.martin-struwe.de/wiki/index.php/Troubleshooting</a></p>
 
 <p>До скорой встречи в небе и да пребудет с вами удача!</p>
