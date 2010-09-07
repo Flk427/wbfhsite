@@ -9,6 +9,19 @@ body {
 	min-width:800px;
 }
 
+h1 {
+	font-size: 1.5em;
+	font-weight: 800;
+}
+
+h3 {
+	padding-top:10px;
+}
+
+em {
+	font-weight: 800;
+}
+
 #wrapper {
 	o-pacity: 0.8;
 	f-ilter: alpha(opacity=80);
@@ -16,7 +29,7 @@ body {
 
 #logo {
 	w-idth: 970px;
-	height: 80px;
+	height: 90px;
 	m-argin: 0 auto;
 	p-adding: 0 10px;
 	b-ackground:url("images/freehost.png") no-repeat;
@@ -24,14 +37,17 @@ body {
 
 #logo img {
 	margin-top:10px;
-	margin-left:10px;
+	m-argin-left:10px;
 }
 
 .sidebar a {
-	color:#546992;
+	color:#000000;
+}
+.sidebar h2 a {
+	c-olor:#546992;
+	color:#249;
 }
 
-wbfh.css (строка 17)
 .sidebar li h2 {
 color:#546992;
 font-size:13px;
@@ -44,8 +60,26 @@ padding-top:10px;
 	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
 }
 
+.sidebar ul {
+	margin: 0;
+	padding: 0 15px;
+	list-style: none;
+}
+
+.sidebar li.current {
+	list-style: circle;
+}
+
 #sidebar1 {
+	border-right: 1px #000000 dashed;
+	border-bottom: 1px #000000 dashed;
 	width: 180px;
+}
+
+#sidebar2 {
+	margin-left:10px;
+	border-left: 1px #000000 dashed;
+	border-bottom: 1px #000000 dashed;
 }
 
 .sidebar li li {
@@ -53,16 +87,18 @@ padding-top:10px;
 	b-order-bottom: 1px #423525 dashed;
 }
 
+.post {
+	padding: 0px 240px 0 210px;
+	line-height: 200%;
+}
+
 .post a {
 	text-decoration: none;
-	color: #546992;
+	c-olor: #546992;
+	color:#249;
 	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
 	font-size: 13px;
 	font-weight: 600;
-}
-
-em {
-	font-weight: 800;
 }
 
 #h_video img {
@@ -89,10 +125,6 @@ em {
 }
 */
 
-h1 {
-	font-weight: 800;
-}
-
 .footerlinks li {
 	display: block;
 	float: left;
@@ -115,8 +147,19 @@ h1 {
 
 /* Разделы */
 
+#section {
+	height:30px;
+}
+
+#section #main {
+	m-argin: 0 auto;
+}
+
 #section ul {
+	height:30px;
 	list-style:none outside none;
+	padding: 0;
+	margin: 0;
 }
 
 #section li {
@@ -129,29 +172,14 @@ h1 {
 	text-transform: uppercase;
 	font-weight:600;
 	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
-	font-size: 13px;
+	f-ont-size: 13px;
 	color: #546992;
-	width:200px;
+	width:180px;
 }
 
 #section a {
 	font-weight:600;
-	font-size: 13px;
-	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
-}
-
-#section #main {
-	margin: 0 auto;
-}
-
-#main {
-	width:600px;
-}
-
-
-#section a {
-	font-weight:600;
-	font-size: 13px;
+	font-size: 1.5em;
 	font-family: Verdana,Arial,Helvetica,sans-serif, "Trebuchet MS";
 
 	display: block;
@@ -160,10 +188,15 @@ h1 {
 	p-adding: 6px 15px 10px 20px;
 	p-adding: 0px 15px;
 	text-decoration: none;
-	text-transform: uppercase;
+	t-ext-transform: uppercase;
 	color: #FFFFFF;
 	m-argin: 0 auto;
 	w-idth:100%;
+}
+
+
+#main {
+	width:600px;
 }
 
 #menu li.path {
@@ -171,8 +204,8 @@ h1 {
 	float: left;
 	margin: 0 3px 0 0;
 	p-adding: 6px 15px 10px 20px;
-	padding: 0px 15px;
-	border-right: 1px #000000 solid;
+	p-adding: 0px 15px;
+	b-order-right: 1px #000000 solid;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Arial, Helvetica, sans-serif;
@@ -181,7 +214,8 @@ h1 {
 }
 
 .post {
-	font-family:Arial,Helvetica,sans-serif;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	f-ont-family:Arial,Helvetica,sans-serif;
 	font-size:14px;
 	line-height:120%;
 }

@@ -19,11 +19,6 @@ h1, h2, h3 {
 	margin-top: 0;
 }
 
-h1 {
-	font-size: 1.6em;
-	font-weight: normal;
-}
-
 h2 {
 	font-size: 1.6em;
 }
@@ -172,11 +167,6 @@ img.right {
 	/*width: 560px;*/
 }
 
-.post {
-	padding: 1px 220px;
-	line-height: 200%;
-}
-
 .post h1 {
 	font-weight: normal;
 }
@@ -240,12 +230,6 @@ img.right {
 	font-size: 12px;
 }
 
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
 .sidebar li {
 	p-adding: 0 0 10px 0;
 }
@@ -271,10 +255,6 @@ img.right {
 	font-size: 13px;
 	/*color: #AF9371;*/
 	color:#546992;
-}
-
-.sidebar a {
-	color: #000 /*#FFFFFF*/;
 }
 
 /* Search */
