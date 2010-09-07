@@ -1,7 +1,7 @@
 body {
 	b-ackground: #29361C url(images/wbbg2.jpg) repeat-x left center;
-	background: #080B12 url(images/67c8c8ecd39c.jpg) no-repeat center top;
-	b-ackground: #BBB;
+	b-ackground: #080B12 url(images/67c8c8ecd39c.jpg) no-repeat center top;
+	background: #BBB;
 	b-ackground: #080B12;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -10,8 +10,21 @@ body {
 }
 
 #wrapper {
-	opacity: 0.8;
-	filter: alpha(opacity=80);
+	o-pacity: 0.8;
+	f-ilter: alpha(opacity=80);
+}
+
+.sidebar a {
+	color:#546992;
+}
+
+wbfh.css (строка 17)
+.sidebar li h2 {
+color:#546992;
+font-size:13px;
+margin:0;
+padding-bottom:0;
+padding-top:10px;
 }
 
 .sidebar li h2 {
