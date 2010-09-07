@@ -67,14 +67,6 @@ img.right {
 
 /* Header */
 
-#logo {
-	w-idth: 970px;
-	height: 60px;
-	m-argin: 0 auto;
-	p-adding: 0 10px;
-	background:url("images/freehost.png") no-repeat;
-}
-
 #logo h1, #logo p {
 	float: left;
 	margin: 0;
