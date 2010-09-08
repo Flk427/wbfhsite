@@ -152,7 +152,9 @@ padding-top:10px;
 }
 
 #section #main {
-	m-argin: 0 auto;
+	margin: 0 auto;
+	b-ackground-color: #222;
+	width: 540px;
 }
 
 #section ul {
@@ -191,7 +193,18 @@ padding-top:10px;
 	t-ext-transform: uppercase;
 	color: #FFFFFF;
 	m-argin: 0 auto;
-	w-idth:100%;
+	width:140px;
+	margin: 0 20px 0 20px;
+}
+
+#section a#A {
+	text-align: left;
+}
+#section a#B {
+	text-align: center;
+}
+#section a#C {
+	text-align: right;
 }
 
 
