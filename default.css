@@ -53,15 +53,6 @@ img.right {
 	margin: 0 0 0 20px;
 }
 
-#header {
-	w-idth: 1000px;
-	m-argin: 0 auto;
-	h-eight: 123px;
-	b-ackground: url(images/img02.jpg) repeat-x left top;
-}
-
-/* Header */
-
 #logo h1, #logo p {
 	float: left;
 	margin: 0;
@@ -129,14 +120,6 @@ img.right {
 #menu .current_page_item a {
 	margin: 0 3px 0 0;
 	color: #FFFFFF;
-}
-
-/* Wrapper */
-
-#wrapper {
-	/*width: 1000px;
-	margin: 0 auto;*/
-	margin: 0 1%;
 }
 
 /* Page */
