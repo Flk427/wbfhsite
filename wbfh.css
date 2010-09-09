@@ -1,7 +1,7 @@
 body {
-	b-ackground: #29361C url(images/wbbg2.jpg) repeat-x left center;
+	background: #29361C url(images/wbbg2.jpg) repeat-x left top;
 	b-ackground: #080B12 url(images/67c8c8ecd39c.jpg) no-repeat center top;
-	background: #BBB;
+	b-ackground: #BBB;
 	b-ackground: #080B12;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 13px;
@@ -41,6 +41,7 @@ em {
 	m-argin: 0 auto;
 	h-eight: 123px;
 	b-ackground: url(images/img02.jpg) repeat-x left top;
+	background: url(images/buffs.jpg) repeat-x left top;
 }
 
 #logo {
