@@ -45,6 +45,12 @@ jQuery(document).ready(function() {
 
 <!-- <div id="bg"> -->
 
+<div style="position: absolute; left: 50%;">
+<?php
+	echo "Php now!";
+?>
+</div>
+
 <div id="wrapper">
 
 <div id="header">
