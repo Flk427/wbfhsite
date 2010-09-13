@@ -54,197 +54,29 @@ jQuery(document).ready(function() {
 <div id="wrapper">
 
 <div id="header">
-	<div id="logo">
-		<img style="float:left;" src="images/freehost2.png" width="284" height="52" alt="WarBirds FreeHost">
-		<img style="float:right;p-adding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90" height="52">
-	</div>
-	<div style="font-size: 1.5em;">Адрес сервера: 87.212.235.22</div>
-
-<!-- <div style="clear:both;">&nbsp;</div> -->
-
-<!--
-<div id="bgtest" style="width:300; height:400; float:left;">
-	<img src="images/67c8c8ecd39c.jpg" width="300" height="550">
-</div>
--->
-
-    <ul id="mycarousel" class="jcarousel-skin-tango">
-		<li>
-			<object width="240" height="180">
-				<param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU">
-				<param name="allowFullScreen" value="true">
-				<param name="allowscriptaccess" value="always">
-				<embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" style="width:240px; height:180px"></embed>
-			</object>
-		</li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></a></li>
-		<li><a href="images/shots/scr0005.jpg" title="Рейд"><img src="images/shots/scr0005.jpg" width="240" height="180" alt="scr0005.jpg"></a></li>
-		<li><a href="images/shots/Scr0003.jpg" title="B-24"><img src="images/shots/Scr0003.jpg" width="240" height="180" alt="Scr0003.jpg"></a></li>
-		<li><a href="images/shots/Scr0000-0.jpg" title="ФАУ-1 в полёте"><img src="images/shots/Scr0000-0.jpg" width="240" height="180" alt="Scr0000-0.jpg"></a></li>
-    </ul>
-
-	<div id="section">
-		<ul id="main">
-			<li class="current_page_item"><a href="#" id="A">Новичкам</a></li>
-			<li><a href="#" id="B">Игрокам</a></li>
-			<li><a href="#" id="C">Ветеранам</a></li>
-		</ul>
-	</div>
-
-	<div id="whereami">
-		<ul id="feed">
-			<li class="path"><h1>Новичкам :: Что это такое</h1></li>			
-			<li style="float:right;">
-				<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
-					<input type="hidden" name="hl" value="ru">
-					<input type="hidden" name="sitesearch" value="wbfree.net">
-					<input type="hidden" name="newwindow" value="1">
-					<input type="hidden" name="aq" value="f">
-					<input type="hidden" name="aqi" value="">
-					<input type="hidden" name="aql" value="">
-					<input type="hidden" name="oq" value="">
-					<input type="hidden" name="gs_rfai" value="">
-				</form>
-			</li>
-		</ul>
-	</div>
-
+	<?php @include('./control/header.php'); ?>
 </div>
 <!-- end header -->
-
-<!-- <div style="clear:both;"></div> -->
 
 <div id="page">
 
 <div id="sidebar1" class="sidebar" style="padding-left:10px;">
-			<ul>
-				<li class="current">
-					<h2><a href="#">Что это такое?</a></h2>
-					<ul>
-						<li><a href="about/game.html">Об игре</a></li>
-						<li><a href="#">О сервере</a></li>
-						<li><a href="#">Разработчики</a></li>
-						<li><a href="#">Сообщество</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Как скачать и установить</a></h2>
-					<ul style="display:none;">
-						<li><a href="#">Скачать</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">Решение вопросов</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Как взлететь</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Управление</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Основные манёвры</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Основы тактики</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Самолёты</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Форум</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Эскадрильи</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">FAQ</a></h2>
-				</li>
-			</ul>
+	<?php @include('./control/menu.php'); ?>
 </div> <!-- menu -->
 
 <div id="sidebar2" class="sidebar" style="padding-left:10px;">
-			<ul>
-				<li>
-					<h2><a href="#">Новости</a></h2>
-					<ul>
-						<li><a href="#">Новость №1</a></li>
-						<li><a href="#">Новость №2</a></li>
-						<li><a href="#">Новость №3</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="http://forum.wbfree.net/" title="Перейти на форум">Форум</a></h2>
-					<ul>
-						<li><a href="#">планы на открытую бету 1.68</a></li>
-						<li><a href="#">обсуждение проекта нового сайта wbfree.net</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Треки</a></h2>
-					<ul>
-						<li><a href="#">Лучший трек №1</a></li>
-						<li><a href="#">Лучший трек №2</a></li>
-						<li><a href="#">Лучший трек №3</a></li>
-						<li><a href="#">Последний трек №1</a></li>
-						<li><a href="#">Последний трек №2</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Рейтинги пилотов</a></h2>
-					<ul>
-						<li><a href="#">Пилот №1</a></li>
-						<li><a href="#">Пилот №2</a></li>
-						<li><a href="#">Пилот №3</a></li>
-						<li><a href="#">Пилот №4</a></li>
-						<li><a href="#">Пилот №5</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Рейтинги эскадрилий</a></h2>
-					<ul>
-						<li><a href="#">Эскадрилия №1</a></li>
-						<li><a href="#">Эскадрилия №2</a></li>
-						<li><a href="#">Эскадрилия №3</a></li>
-						<li><a href="#">Эскадрилия №4</a></li>
-						<li><a href="#">Эскадрилия №5</a></li>
-					</ul>
-				</li>
-			</ul>
-</div><!-- menu -->
+	<?php @include('./control/info.php'); ?>
+</div><!-- info -->
 
 <div class="post">
+	<?php
+		// вывести файл
+		// В случае возникновения ошибки вернёт FALSE, если только функция не была вызвана как @readfile(), и выведет сообщение об ошибке.
+		// TODO: readfile() -> @readfile()
 
-<div style="width: 370px; height:150px; f-loat: right; padding-top:20px; margin: 0 auto; c-lear:both;">
-<img src="images/button.jpg" alt="Скачать бесплатно" style="width:430px; height:200px; margin: 0 auto;">
-<span style="position: relative; top: -150px; left: 45px; font-size: 3em; font-weight: 800; color:#235;">WarBirds & FHL</span>
-<span style="position: relative; top: -145px; left: 130px; font-size: 1.5em; color:white;">Полная сборка</span>
-<span style="position: relative; top: -120px; left: -40px; font-size: 1.5em; color:white;">Скачать бесплатно</span>
-</div>
-
-<h3>Что такое WarBirds FreeHost?</h3>
-
-<p>WarBirds FreeHost - бесплатный Online cимулятор войны в воздухе.</p>
-
-<table>
-	<tr><td>Разработчик:</td><td>iEntertainment Network</td></tr>
-	<tr><td>Издатель:</td><td>Atari</td></tr>
-	<tr><td>Год выпуска:</td><td>2001</td></tr>
-	<tr><td>Жанр:</td><td>Авиасимуляторы</td></tr>
-	<tr><td>Платформа:</td><td>От Win95 до Win7</td></tr>
-</table>
-
-<p>Warbirds FreeHost - это бесплатная онлайн игра на тему второй мировой войны,
-в которой вам позволено стать пилотом одного из <strong>N</strong> сaмолетов (<strong>X</strong>
-истребителей и <strong>Y</strong> бомбардировщиков) основных стран-участниц второй мировой войны
-(WWII). В отличие от уже давно существующих игр эта игра завоевала популярность тем,
-что бои в небе происходят в онлайн (через Интернет) и воевать вам придется с реальными,
-живыми противниками. Вы можете скачать её с этого сайта и потратив совсем немного
-времени на настройку ринуться в воздушный бой!</p>
-
-<p style="text-align:center;">Вы можете <a href="#">скачать и установить игру прямо сейчас</a> или <a href="about/game.html">узнать больше об игре.</a></p>
-
-</div>
+		readfile("./content/newbee_about.html");
+	?>
+</div> <!-- post -->
 
 <!-- <div style="clear:right;">&nbsp;</div> -->
 <br clear="all"> <!-- IE6 hack -->
@@ -265,15 +97,6 @@ jQuery(document).ready(function() {
 </div>
 
 </div><!-- wrapper - тело с л. и п. меню - wrapper -->
-
-<!--
-<div id="bgtst" style="background: #080B12 url(images/67c8c8ecd39c.jpg) no-repeat center top; opacity:0.2; width:100%; height:100%; position:absolute; top:0; left:0;">
-&nbsp;
-</div>
--->
-
-<!--</div>--> <!--data-->
-<!-- </div> --> <!-- bg -->
 
 </body>
 </html>
