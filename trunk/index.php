@@ -1,7 +1,8 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <?php @include('./control/config.php'); ?>
+<?php @include('./control/common.php'); ?>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
 <head>
@@ -57,7 +58,7 @@ jQuery(document).ready(function() {
 <div id="wrapper">
 
 <div id="header">
-	<?php @include('./control/header.php'); ?>
+<?php @include('./control/header.php'); ?>
 </div>
 <!-- end header -->
 
