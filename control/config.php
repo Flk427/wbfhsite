@@ -3,10 +3,10 @@
 
 	// главная страница (по умолчанию)
 	$content_tree['']['']['']['caption'] = 'Новичкам';
-	$content_tree['']['']['']['caption'] = 'newbee_about.html';
+	$content_tree['']['']['']['content'] = 'newbee_about.html';
 
 	$content_tree['newbee']['']['']['caption'] = 'Новичкам';
-	$content_tree['newbee']['']['']['caption'] = 'newbee_about.html';
+	$content_tree['newbee']['']['']['content'] = 'newbee_about.html';
 
 	$content_tree['newbee']['about']['']['caption'] = 'Что это такое?';
 	$content_tree['newbee']['about']['']['content'] = 'newbee_about.html';
