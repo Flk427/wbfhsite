@@ -1,5 +1,5 @@
 ﻿<?php
-	echo '<div id="logo">
+echo '<div id="logo">
 		<img style="float:left;" src="images/freehost2.png" width="284" height="52" alt="WarBirds FreeHost">
 		<img style="float:right;p-adding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90" height="52">
 	</div>
@@ -31,7 +31,13 @@
 
 	<div id="whereami">
 		<ul id="feed">
-			<li class="path"><h1>Новичкам :: Что это такое</h1></li>			
+			<!-- <li class="path"><h1>Новичкам :: Что это такое</h1></li> -->
+			<li class="path"><h1>';
+
+	echo $where_am_i;
+
+	echo '</h1></li>
+
 			<li style="float:right;">
 				<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
 					<input type="hidden" name="hl" value="ru">
