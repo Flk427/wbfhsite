@@ -9,7 +9,6 @@
 		$category = $def_category;
 		$section = $def_section;
 		$part = $def_part;
-		echo '!!!!!!!1';
 	}
 
 	$where_am_i = $content_tree[$category]['']['']['caption'];
