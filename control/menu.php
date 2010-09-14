@@ -25,7 +25,7 @@
 			echo $content_tree[$category][$cat_key]['']['caption'];
 			echo "</a></h2>\n";
 
-			if (count($cat_val) > 1)
+			if ((count($cat_val) > 1) && ($cat_key == $section))
 			{
 				echo "			<ul>\n";
 
