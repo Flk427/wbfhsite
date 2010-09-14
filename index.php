@@ -15,7 +15,7 @@
 	<title>WarBirds FreeHost - FreeWare WWII Air Combat Simulator</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Проект нового сайта бесплатного авиасимулятора WarBirds FreeHost">
-	<meta name="keywords" content="WarBirds FreeHost simulator бесплатный free">
+	<meta name="keywords" content="WarBirds FreeHost war birds free host simulator бесплатный симулятор">
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
