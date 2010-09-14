@@ -2,6 +2,7 @@
 
 <?php @include('./control/config.php'); ?>
 <?php @include('./control/common.php'); ?>
+<?php @include('./control/functions.php'); ?>
 
 <html>
 
@@ -65,11 +66,11 @@ jQuery(document).ready(function() {
 <div id="page">
 
 <div id="sidebar1" class="sidebar" style="padding-left:10px;">
-	<?php @include('./control/menu.php'); ?>
+<?php @include('./control/menu.php'); ?>
 </div> <!-- menu -->
 
 <div id="sidebar2" class="sidebar" style="padding-left:10px;">
-	<?php @include('./control/info.php'); ?>
+<?php @include('./control/info.php'); ?>
 </div><!-- info -->
 
 <div class="post">

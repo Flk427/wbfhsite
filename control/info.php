@@ -1,6 +1,7 @@
-﻿<?php
+<?php
+
 	echo '<ul>
-				<li>
+		<li>
 					<h2><a href="#">Новости</a></h2>
 					<ul>
 						<li><a href="#">Новость №1</a></li>

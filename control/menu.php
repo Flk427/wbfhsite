@@ -1,45 +1,62 @@
 <?php
-	echo '<ul>
-				<li class="current">
-					<h2><a href="#">Что это такое?</a></h2>
-					<ul>
-						<li><a href="index.php?category=newbee&section=about&part=game">Об игре</a></li>
-						<li><a href="#">О сервере</a></li>
-						<li><a href="#">Разработчики</a></li>
-						<li><a href="#">Сообщество</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Как скачать и установить</a></h2>
-					<ul style="display:none;">
-						<li><a href="#">Скачать</a></li>
-						<li><a href="#">Установка</a></li>
-						<li><a href="#">Решение вопросов</a></li>
-					</ul>
-				</li>
-				<li>
-					<h2><a href="#">Как взлететь</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Управление</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Основные манёвры</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Основы тактики</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Самолёты</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Форум</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">Эскадрильи</a></h2>
-				</li>
-				<li>
-					<h2><a href="#">FAQ</a></h2>
-				</li>
-			</ul>';
+
+	if (count($content_tree[$category]) > 1)
+	{
+		echo "	<ul>\n";
+
+		foreach ($content_tree[$category] as $cat_key => $cat_val)
+		{
+			if ($cat_key == '') continue;
+
+			if ($cat_key == $section)
+			{
+				$tag_class = ' class="current"';
+			}
+			else
+			{
+				$tag_class = '';
+			}
+
+			echo "		<li$tag_class><h2>";
+
+			$url = ContentToParams($content_tree[$category][$cat_key]['']['content']);
+
+			echo '<a href="'. $url .'">';
+			echo $content_tree[$category][$cat_key]['']['caption'];
+			echo "</a></h2>\n";
+
+			if (count($cat_val) > 1)
+			{
+				echo "			<ul>\n";
+
+				foreach($cat_val as $sec_key => $sec_val)
+				{
+					if ($sec_key == '') continue;
+
+					if ($sec_key == $part)
+					{
+						$tag_class = ' class="current"';
+					}
+					else
+					{
+						$tag_class = '';
+					}
+
+					echo "				<li$tag_class>";
+
+					$url = ContentToParams($content_tree[$category][$cat_key][$sec_key]['content']);
+
+					echo '<a href="'. $url .'">';
+					echo $content_tree[$category][$cat_key][$sec_key]['caption'];
+					echo "</a></li>\n";
+				}
+
+				echo "			</ul>\n";
+			}
+		}
+
+		echo "		</li>\n";
+
+		echo "	</ul>\n";
+	}
 ?>

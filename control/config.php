@@ -1,4 +1,9 @@
 <?php
+
+	$_GET['category'] = 'newbee';
+	$_GET['section'] = 'about';
+	$_GET['part'] = 'game';
+
 	unset($content_tree);
 
 	/////////////////////////////////////////////////////////////////
