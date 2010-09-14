@@ -1,27 +1,22 @@
 <?php
 
-	$_GET['category'] = 'newbee';
-	$_GET['section'] = 'about';
-	$_GET['part'] = 'game';
-
-	unset($content_tree);
-
 	/////////////////////////////////////////////////////////////////
 	// расположение содержимого страниц
 	$content_path = './content';
 
 	/////////////////////////////////////////////////////////////////
 	// ip фрихоста
-	$server_ip = '87.212.235.21';
+	$server_ip = '89.108.124.170';
 
 	/////////////////////////////////////////////////////////////////
 	//структура сайта
 
-	// TODO:
 	// Формат содержимого поля 'content':
 	// <file>[.<ext.>] - файл в $content_path
-	// <file>[.<ext.>][#<ancor>] - файл в $content_path, позиция в файле <ancor>
 	// http://<URL> - внешний URL
+
+	// TODO:
+	// <file>[.<ext.>][#<ancor>] - файл в $content_path, позиция в файле <ancor>
 
 	// главная страница (по умолчанию)
 	$content_tree['']['']['']['caption'] = 'Новичкам';
@@ -63,6 +58,12 @@
 	$content_tree['newbee']['aircrafts']['']['caption'] = 'Самолёты';
 	$content_tree['newbee']['aircrafts']['']['content'] = 'newbee_aircrafts.html';
 
+	$content_tree['newbee']['aircrafts']['rps-brief']['caption'] = 'RPS кратко';
+	$content_tree['newbee']['aircrafts']['rps-brief']['content'] = 'http://personne.newmail.ru/FreeHost/rps-brief.htm';
+
+	$content_tree['newbee']['aircrafts']['rps-detail']['caption'] = 'RPS подробно';
+	$content_tree['newbee']['aircrafts']['rps-detail']['content'] = 'http://personne.newmail.ru/FreeHost/rps-detail.htm';
+
 	$content_tree['newbee']['forum']['']['caption'] = 'Форум';
 	$content_tree['newbee']['forum']['']['content'] = 'newbee_forum.html';
 
@@ -71,5 +72,11 @@
 
 	$content_tree['newbee']['faq']['']['caption'] = 'FAQ';
 	$content_tree['newbee']['faq']['']['content'] = 'newbee_faq.html';
+
+	$content_tree['newbee']['faq']['wb']['caption'] = 'Что такое Warbirds?';
+	$content_tree['newbee']['faq']['wb']['content'] = 'newbee_faq_wb.html';
+
+	$content_tree['newbee']['faq']['fh']['caption'] = 'Что такое FreeHost?';
+	$content_tree['newbee']['faq']['fh']['content'] = 'newbee_faq_fh.html';
 
 ?>

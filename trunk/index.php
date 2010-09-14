@@ -1,8 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
-<?php @include('./control/config.php'); ?>
-<?php @include('./control/common.php'); ?>
-<?php @include('./control/functions.php'); ?>
+<?php
+
+	@include('./control/init.php');
+	@include('./control/functions.php');
+	@include('./control/config.php');
+	@include('./control/common.php');
+
+?>
 
 <html>
 
@@ -50,12 +55,6 @@ jQuery(document).ready(function() {
 
 <!-- <div id="bg"> -->
 
-<div style="position: absolute; left: 50%;">
-<?php
-	echo "Php now!";
-?>
-</div>
-
 <div id="wrapper">
 
 <div id="header">
@@ -77,9 +76,10 @@ jQuery(document).ready(function() {
 	<?php
 		// вывести файл
 		// В случае возникновения ошибки вернёт FALSE, если только функция не была вызвана как @readfile(), и выведет сообщение об ошибке.
-		// TODO: readfile() -> @readfile()
 
-		readfile("$content_path/".$content_tree[$category][$section][$part]['content']);
+		//@readfile("$content_path/".$content_tree[$category][$section][$part]['content']);
+		$content = file_get_contents("$content_path/".$content_tree[$category][$section][$part]['content']);
+		echo nl2br($content);
 	?>
 </div> <!-- post -->
 
