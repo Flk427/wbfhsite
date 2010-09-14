@@ -67,7 +67,7 @@
 	$content_tree['newbee']['aircrafts']['rps-detail']['content'] = 'http://personne.newmail.ru/FreeHost/rps-detail.htm';
 
 	$content_tree['newbee']['forum']['']['caption'] = 'Форум';
-	$content_tree['newbee']['forum']['']['content'] = 'newbee_forum.html';
+	$content_tree['newbee']['forum']['']['content'] = 'http://forum.wbfree.net/';
 
 	$content_tree['newbee']['squads']['']['caption'] = 'Эскадрильи';
 	$content_tree['newbee']['squads']['']['content'] = 'newbee_squads.html';
