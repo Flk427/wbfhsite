@@ -1,8 +1,9 @@
 <?php
+
 	// значения по умолчанию
-	$category='newbee';
-	$section='about';
-	$part='';
+	$category = $_GET['category'];
+	$section = $_GET['section'];
+	$part = $_GET['part'];
 
 	$where_am_i = $content_tree[$category]['']['']['caption'];
 
