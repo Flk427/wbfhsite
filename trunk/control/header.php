@@ -4,7 +4,11 @@
 		<img style="float:left;" src="images/freehost2.png" width="284" height="52" alt="WarBirds FreeHost">
 		<img style="float:right;p-adding-top:8px;" src="images/flags.png" alt="Выбор языка" title="Выбор языка | Choose language | Wählen Sie eine Sprache | Escolher o idioma | Wybierz język" width="90" height="52">
 	</div>
-	<div style="font-size: 1.5em;">Адрес сервера: 87.212.235.22</div>
+	<div style="font-size: 1.5em;">Адрес сервера: ';
+
+	echo $server_ip;
+
+	echo '</div>
 
     <ul id="mycarousel" class="jcarousel-skin-tango">
 		<li>

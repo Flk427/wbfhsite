@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
 		// В случае возникновения ошибки вернёт FALSE, если только функция не была вызвана как @readfile(), и выведет сообщение об ошибке.
 		// TODO: readfile() -> @readfile()
 
-		readfile("./content/newbee_about.html");
+		readfile("$content_path/".$content_tree[$category][$section][$part]['content']);
 	?>
 </div> <!-- post -->
 
