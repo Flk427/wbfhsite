@@ -79,7 +79,15 @@ jQuery(document).ready(function() {
 
 		//@readfile("$content_path/".$content_tree[$category][$section][$part]['content']);
 		$content = file_get_contents("$content_path/".$content_tree[$category][$section][$part]['content']);
-		echo nl2br($content);
+
+		if ($content_tree[$category][$section][$part]['nobr'])
+		{
+			echo nl2br($content);
+		}
+		else
+		{
+			echo $content;
+		}
 	?>
 </div> <!-- post -->
 

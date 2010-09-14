@@ -19,8 +19,10 @@
 	// <file>[.<ext.>][#<ancor>] - файл в $content_path, позиция в файле <ancor>
 
 	// главная страница (по умолчанию)
-	$content_tree['']['']['']['caption'] = 'Новичкам';
-	$content_tree['']['']['']['content'] = 'newbee_about.html';
+	$def_category = 'newbee';
+	$def_section = 'about';
+	$def_part = '';
+
 
 	$content_tree['newbee']['']['']['caption'] = 'Новичкам';
 	$content_tree['newbee']['']['']['content'] = 'newbee_about.html';
@@ -75,8 +77,10 @@
 
 	$content_tree['newbee']['faq']['wb']['caption'] = 'Что такое Warbirds?';
 	$content_tree['newbee']['faq']['wb']['content'] = 'newbee_faq_wb.html';
+	$content_tree['newbee']['faq']['wb']['nobr'] = '1';
 
 	$content_tree['newbee']['faq']['fh']['caption'] = 'Что такое FreeHost?';
 	$content_tree['newbee']['faq']['fh']['content'] = 'newbee_faq_fh.html';
+	$content_tree['newbee']['faq']['fh']['nobr'] = '1';
 
 ?>

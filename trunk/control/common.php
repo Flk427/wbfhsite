@@ -1,9 +1,16 @@
 <?php
 
-	// значения по умолчанию
 	$category = $_GET['category'];
 	$section = $_GET['section'];
 	$part = $_GET['part'];
+
+	if ($content_tree[$category][$section][$part]['content'] == '')
+	{
+		$category = $def_category;
+		$section = $def_section;
+		$part = $def_part;
+		echo '!!!!!!!1';
+	}
 
 	$where_am_i = $content_tree[$category]['']['']['caption'];
 
