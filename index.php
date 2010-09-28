@@ -64,11 +64,11 @@ jQuery(document).ready(function() {
 
 <div id="page">
 
-<div id="sidebar1" class="sidebar" style="padding-left:10px;">
+<div id="sidebar1" class="sidebar">
 <?php @require_once('./control/menu.php'); ?>
 </div> <!-- menu -->
 
-<div id="sidebar2" class="sidebar" style="padding-left:10px;">
+<div id="sidebar2" class="sidebar">
 <?php @require_once('./control/info.php'); ?>
 </div><!-- info -->
 
@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
 		</ul>
 	</div>
 	&nbsp;
-	<p>Designed with Free CSS Templates Blend theme</p>
+	<!-- <p>Designed with Free CSS Templates Blend theme</p> -->
 </div>
 
 </div><!-- wrapper - тело с л. и п. меню - wrapper -->
