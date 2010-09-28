@@ -2,10 +2,10 @@
 
 <?php
 
-	@include('./control/init.php');
-	@include('./control/functions.php');
-	@include('./control/config.php');
-	@include('./control/common.php');
+	@require_once('./control/init.php');
+	@require_once('./control/functions.php');
+	@require_once('./control/config.php');
+	@require_once('./control/common.php');
 
 ?>
 
@@ -58,18 +58,18 @@ jQuery(document).ready(function() {
 <div id="wrapper">
 
 <div id="header">
-<?php @include('./control/header.php'); ?>
+<?php @require_once('./control/header.php'); ?>
 </div>
 <!-- end header -->
 
 <div id="page">
 
 <div id="sidebar1" class="sidebar" style="padding-left:10px;">
-<?php @include('./control/menu.php'); ?>
+<?php @require_once('./control/menu.php'); ?>
 </div> <!-- menu -->
 
 <div id="sidebar2" class="sidebar" style="padding-left:10px;">
-<?php @include('./control/info.php'); ?>
+<?php @require_once('./control/info.php'); ?>
 </div><!-- info -->
 
 <div class="post">
