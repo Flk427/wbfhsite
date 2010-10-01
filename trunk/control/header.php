@@ -10,6 +10,8 @@
 
 	echo '</div>
 
+	// TODO: скрывать по-умолчанию
+	// TODO: при отключеном JS показать альтернативный блок
     <ul id="mycarousel" class="jcarousel-skin-tango">
 		<li>
 			<object width="240" height="180">
