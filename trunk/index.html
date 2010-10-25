@@ -9,16 +9,18 @@
 	<meta name="description" content="Проект нового сайта бесплатного авиасимулятора WarBirds FreeHost">
 	<meta name="keywords" content="WarBirds FreeHost war birds free host simulator бесплатный симулятор">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
+	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="scripts/wbfh.js"></script>
 </head>
 
 <body>
 
 <div id="header">
 	<div id="wrapper">
-		<div id="logo"><img src="images/logo.png" alt="Logo"></div>
-		<div id="wbfhcaption"><img src="images/wbfh.gif" alt="Warbirds Freehost"></div>
+		<div id="logo"><img src="images/logo.png" onclick="home()" alt="Logo" title="Warbirds Freehost"></div>
+		<div id="wbfhcaption"><img src="images/wbfh.gif" onclick="home()" alt="Warbirds Freehost" title="Warbirds Freehost"></div>
 		<div id="serverstate">
 			<table>
 				<tr style="color: #fff;"><td colspan="4"><a href="#">WBMEDRL2</a> | <a href="#">1942-05-01</a></td></tr>
@@ -26,14 +28,14 @@
 					<table style="	border-spacing: 0px;"><tr>
 						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; color: #fff; background: url(images/bg_red.gif) repeat-x;">7</td>
 						<td style="width: 20px; height: 15px; text-align: center; background: #fff;">vs</td>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;"">5</td>
+						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;">5</td>
 					</tr></table>
 				</td></tr>
 				<tr><td>wars won:</td><td>
-					<table style="	border-spacing: 0px;"><tr>
+					<table style="border-spacing: 0px;"><tr>
 						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; color: #fff; background: url(images/bg_red.gif) repeat-x;">6</td>
 						<td style="width: 20px; height: 15px; text-align: center; background: #fff;">vs</td>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;"">7</td>
+						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;">7</td>
 					</tr></table>
 				</td></tr>
 			</table>
@@ -59,13 +61,13 @@
 	<div id="wrapper">
 		<div id="section_sel">
 			<ul class="h_menu">
-				<li class="section_first_elem section_selected_elem"><span>Новичкам</span></li>
-				<li class="section_other_elem"><span>Игрокам</span></li>
-				<li class="section_other_elem"><span>Ветеранам и активистам</span></li>
+				<li class="section_first_elem section_selected_elem">Новичкам</li>
+				<li class="section_other_elem"><a href="#">Игрокам</a></li>
+				<li class="section_other_elem"><a href="#">Ветеранам и активистам</a></li>
 			</ul>
 		</div> <!--section_sel-->
 		<div id="search_panel">
-			<form method="get" action="http://google.com/search">Поиск <input name="q" type="text">
+			<form method="get" action="http://google.com/search"><input name="q" type="text">
 				<input type="hidden" name="hl" value="ru">
 				<input type="hidden" name="sitesearch" value="wbfree.net">
 				<input type="hidden" name="newwindow" value="1">
@@ -75,24 +77,27 @@
 				<input type="hidden" name="oq" value="">
 				<input type="hidden" name="gs_rfai" value="">
 			</form>
+			<img src="images/search_ico.gif" style="float: right; cursor: pointer;" title="Искать по wbfree.net">
 		</div> <!--search_panel-->
 	</div> <!--wrapper-->
 </div> <!--section_menu-->
 
 <div id="part_menu">
 	<div id="wrapper">
-		<ul class="h_menu">
-			<li class="part_first_elem part_selected_elem"><span>Что это такое?</span></li>
-			<li class="part_other_elem"><span>Как скачать и установить</span></li>
-			<li class="part_other_elem"><span>Как взлететь</span></li>
-			<li class="part_other_elem"><span>Управление</span></li>
-			<li class="part_other_elem"><span>Основные манёвры</span></li>
-			<li class="part_other_elem"><span>Основы тактики</span></li>
-			<li class="part_other_elem"><span>Самолёты</span></li>
-			<li class="part_other_elem"><span>Форум</span></li>
-			<li class="part_other_elem"><span>Эскадрильи</span></li>
-			<li class="part_other_elem"><span>FAQ</span></li>
-		</ul>
+		<div id="part_sel">
+			<ul class="h_menu">
+				<li class="part_first_elem part_selected_elem">Что это такое?</li>
+				<li class="part_other_elem"><a href="#">Как скачать и установить</a></li>
+				<li class="part_other_elem"><a href="#">Как взлететь</a></li>
+				<li class="part_other_elem"><a href="#">Управление</a></li>
+				<li class="part_other_elem"><a href="#">Основные манёвры</a></li>
+				<li class="part_other_elem"><a href="#">Основы тактики</a></li>
+				<li class="part_other_elem"><a href="#">Самолёты</a></li>
+				<li class="part_other_elem"><a href="#">Форум</a></li>
+				<li class="part_other_elem"><a href="#">Эскадрильи</a></li>
+				<li class="part_other_elem"><a href="#">FAQ</a></li>
+			</ul>
+		</div> <!--part_sel-->
 	</div> <!--wrapper-->
 </div> <!--part_menu-->
 
@@ -101,7 +106,7 @@
 		<div id="download">
 			<table>
 				<tr><td style="font-size: 28px; line-height: 28px; padding-top: 15px;">War<span style="font-weight: 600;">Birds & FHL</span></td></tr>
-				<tr><td style="font-size: 14px; color: #f7fe5e; padding-bottom: 4px;">Полная сборка</span></td></tr>
+				<tr><td style="font-size: 14px; padding-bottom: 4px;">Полная сборка</span></td></tr>
 				<tr><td class="about"><span class="about_caption">Разработчик:</span> <span class="about_value">iEntertainment Network</span></span></td></tr>
 				<tr><td class="about"><span class="about_caption">Издатель:</span> <span class="about_value">Atari</span></td></tr>
 				<tr><td class="about"><span class="about_caption">Год выпуска:</span> <span class="about_value">2001</span></td></tr>

@@ -49,11 +49,13 @@ h1 {
 }
 
 #logo {
+	cursor:pointer;
 	padding-top: 10px;
 	float: left;
 }
 
 #wbfhcaption {
+	cursor:pointer;
 	float: left;
 	padding-top: 20px;
 	padding-left: 10px;
@@ -128,6 +130,10 @@ h1 {
 	width: 625px;
 }
 
+#section_sel a {
+	color: #fff;
+}
+
 #section_sel .section_first_elem {
 	line-height: 15px;
 	padding: 10px 0 10px 0 /*left*/ ;
@@ -140,7 +146,7 @@ h1 {
 	margin: 0 25px 0 25px
 }
 
-#section_sel .section_other_elem span{
+#section_sel .section_other_elem a {
 	border-bottom: 1px solid;
 }
 
@@ -148,14 +154,31 @@ h1 {
 	background: url(images/hover_main_menu.gif) no-repeat bottom;
 }
 
+.sectSelected {
+	/*
+	background: url(images/hover_sub_menu.gif) repeat-x;
+	color: #f00;*/
+	background: url(images/hover_sub_menu.gif) repeat-x bottom;
+	border-bottom: 0px none;
+}
+
 #search_panel {
-	width: 300px;
+	width: 200px;
+	height: 23px;
 	float: right;
+	border: 1px solid #888;
+	margin: 5px 0 5px 0;
+}
+
+#search_panel form {
+	width: 183px;
+	float: left;
 }
 
 #search_panel input {
 	background: url(images/bg_search.gif) repeat-x;
 	color: #bbb;
+	border: none;
 }
 
 /* Выбор раздела */
@@ -167,31 +190,47 @@ h1 {
 	height: 30px;
 }
 
-#part_menu .part_other_elem {
-	line-height: 10px;
-	padding: 10px 0 10px;
-	margin: 0 10px 0 10px;
-	/*border-bottom: 1px solid;*/
+#part_menu a {
+	color: #000;
 }
 
-#part_menu .part_other_elem span{
+#part_menu .part_other_elem {
+	line-height: 10px;
+	/*padding: 10px 0 10px;
+	margin: 0 10px 0 10px;*/
+	/*border-bottom: 1px solid;*/
+	padding: 10px 10px 10px 10px;
+}
+
+#part_menu .part_other_elem a {
 	border-bottom: 1px solid;
 }
 
 #part_menu .part_first_elem {
 	line-height: 10px;
-	padding: 10px 0 10px 0 /*left*/ ;
+	/*
+	padding: 10px 0 10px 0;
 	margin: 0 5px 0 15px;
+	*/
+	padding: 10px 5px 10px 5px;
 }
 
 #part_menu .part_selected_elem {
 	background: url(images/hover_sub_menu.gif) repeat-x bottom;
 }
 
+.partSelected {
+	/*
+	background: url(images/hover_sub_menu.gif) repeat-x;
+	color: #f00;*/
+	background: url(images/bg_sub_menu_on.gif) repeat;
+}
+
 /* Инфо и скриншоты */
 
 #dl_and_shots {
-	color: #cbcc32;
+	color: #dd3;
+	/*color: #757535;*/
 	background: url(images/bg_screenshots.gif) repeat-x;
 	height: 240px;
 }
