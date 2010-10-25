@@ -33,7 +33,7 @@ function partOnMouseOver()
 		$(this).parent().addClass('partSelected');
 		$(this).css('color', 'white');
 	}
-	/* не работает
+	/* РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 	else
 	{
 		$(this).parent().css('background-image', '');
@@ -49,7 +49,7 @@ function partOnMouseOut()
 		$(this).parent().removeClass('partSelected');
 		$(this).css('color', 'black');
 	}
-	/* не работает
+	/* РЅРµ СЂР°Р±РѕС‚Р°РµС‚
 	else
 	{
 		$(this).parent().css('background-image', 'images/hover_sub_menu.gif');
