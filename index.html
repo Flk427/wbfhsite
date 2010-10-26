@@ -13,6 +13,18 @@
 	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
 	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="scripts/wbfh.js"></script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-3557915-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
 </head>
 
 <body>
@@ -129,7 +141,36 @@
 	<div id="wrapper">
 
 		<div id="leftbar">
-			Моменты из игры
+			<h1>Моменты из игры</h1>
+			<object width="240" height="180">
+				<param name="movie" value="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU">
+				<param name="allowFullScreen" value="true">
+				<param name="allowscriptaccess" value="always">
+				<embed src="http://www.youtube.com/v/GHhzQfqCHGQ?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" style="width:240px; height:180px"></embed>
+			</object>
+
+			<div style="width: 240px; float: left; margin-top: 20px;"> <!-- управление отображением тем форума или новостей -->
+				<div onclick="show_forum()" style="padding: 7px 7px 0px 7px; color: #fff; cursor: pointer; width: 104px; height: 25px; float: left; background-color: #858510; border-bottom: 1px solid #656500; /*border-top: 2px solid #858510; */">
+					на Форуме <img src="images/ico_forum.gif" style="float: right;">
+				</div>
+				<div onclick="show_news()" style="padding: 5px 7px 0px 7px; cursor: pointer; width: 106px; height: 24px; float: left; margin-top: 2px; /*left: 118px; top: 2px; vertical-align: bottom;*/    background-color: #fff;    border: 1px solid #858510; border-bottom: 1px solid #656500; color: #124;">
+					Новости
+				</div>
+			</div>
+			<div style="float: left; width: 240px;">
+				<div style="padding: 7px; background-color: #858510; border-bottom: 1px solid #656500; border-top: 1px solid #bb4; font-size: 11px;">
+					<h2 style="font-size: 11px; margin: 0;">15.07.2010</h2>
+					<a style="color: #fff;" href="#">планы на открытую бету 1.68</a>
+				</div>
+				<div style="padding: 7px; background-color: #858510; border-bottom: 1px solid #656500; border-top: 1px solid #bb4; font-size: 11px;">
+					<h2 style="font-size: 11px; margin: 0;">15.07.2010</h2>
+					<a style="color: #fff;" href="#">обсуждение проекта нового сайта wbfree.net</a>
+				</div>
+				<div style="margin-bottom: 20px; padding: 7px; background-color: #393a00; font-size: 11px; /*border-bottom: 1px solid #656500; border-top: 1px solid #bb4;*/">
+					<a style="color: #fff;" href="#">все обсуждения</a>
+				</div>
+			</div>
+
 		</div> <!--leftbar-->
 
 		<div id="centerbar">
@@ -138,7 +179,7 @@
 
 <p>Игра на тему второй мировой войны, в которой вам позволено стать пилотом одного из истребителей или бомбардировщиков основных стран-участниц второй мировой войны (WWII).</p>
 <p>В отличие от уже давно существующих игр эта игра завоевала популярность тем, что бои в небе происходят в онлайн (через Интернет) и воевать вам придется с реальными, живыми противниками.</p>
-<p>Вы можете скачать её с этого сайта и потратив совсем немного времени на настройку ринуться в воздушный бой!</p>
+<p>Вы можете <a href="#">скачать</a> её с этого сайта и потратив совсем немного времени на <a href="#">настройку</a> ринуться в воздушный бой!</p>
 			</div> <!--content-->
 
 			<div id="links">
