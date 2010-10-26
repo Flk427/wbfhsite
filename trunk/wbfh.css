@@ -2,7 +2,7 @@
 body {
 	margin: 0;
 	font-family: Arial, Georgia, "Times New Roman";
-	font-size: 15px;
+	font-size: 14px;
 }
 
 a {
@@ -12,6 +12,7 @@ a {
 h1 {
 	font-family: Arial, Georgia, "Times New Roman";
 	font-size: 25px;
+	font-weight: 400;
 	b-ackground: url(images/hover_sub_menu.gif) repeat-x;
 }
 
@@ -273,15 +274,19 @@ h1 {
 }
 
 #leftbar {
-	background-color: #aaa;
+	/*background-color: #aaa;*/
 	float: left;
 	width: 255px;
 }
 
 #centerbar {
-	background-color: #ddd;
+	/*background-color: #ddd;*/
 	width: 500px;
 	float: left;
+}
+
+#centerbar a {
+	color: #A11;
 }
 
 #links {
