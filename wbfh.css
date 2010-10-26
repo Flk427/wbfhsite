@@ -218,6 +218,8 @@ h1 {
 
 #part_menu .part_selected_elem {
 	background: url(images/hover_sub_menu.gif) repeat-x bottom;
+	padding: 10px 0px 10px 0px;
+	margin: 0 5px 0 5px;
 }
 
 .partSelected {
