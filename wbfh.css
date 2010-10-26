@@ -197,35 +197,24 @@ h1 {
 
 #part_menu .part_other_elem {
 	line-height: 10px;
-	/*padding: 10px 0 10px;
-	margin: 0 10px 0 10px;*/
-	/*border-bottom: 1px solid;*/
 	padding: 10px 10px 10px 10px;
 }
 
-#part_menu .part_other_elem a {
+#part_menu /*.part_other_elem*/ a {
 	border-bottom: 1px solid;
 }
 
 #part_menu .part_first_elem {
 	line-height: 10px;
-	/*
-	padding: 10px 0 10px 0;
-	margin: 0 5px 0 15px;
-	*/
-	padding: 10px 5px 10px 5px;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 0 5px;
 }
 
 #part_menu .part_selected_elem {
 	background: url(images/hover_sub_menu.gif) repeat-x bottom;
-	padding: 10px 0px 10px 0px;
-	margin: 0 5px 0 5px;
 }
 
 .partSelected {
-	/*
-	background: url(images/hover_sub_menu.gif) repeat-x;
-	color: #f00;*/
 	background: url(images/bg_sub_menu_on.gif) repeat;
 }
 
