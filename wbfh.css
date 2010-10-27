@@ -299,6 +299,10 @@ h1 {
 	padding-left: 15px;
 }
 
+#rightbar a {
+	color: #fff;
+}
+
 /* Подвал */
 
 #footer {
