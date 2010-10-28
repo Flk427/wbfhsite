@@ -84,6 +84,19 @@ h1 {
 	padding: 0 0 0 0;
 }
 
+#serverstate table table{
+	border-width: 0;
+	border-spacing: 0;
+}
+
+#serverstate table table td {
+	width: 20px;
+	height: 15px;
+	text-align: center;
+	background: #fff;
+	font-weight: 600;
+}
+
 #serveraddr {
 	float: left;
 	padding-top: 20px;
