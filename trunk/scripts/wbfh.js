@@ -1,13 +1,10 @@
 $(document).ready(function() {
-	//$('#section_sel li a').css('color', 'red');
-
-	//$('.h_menu li a').css('color', 'red');
 	$('#part_sel li a').mouseover(partOnMouseOver);
-	//$('.h_menu li a').mouseover(function() {
-	//	$(this).addClass('sectSelected');
-	//	$(this).css('color', 'red');
-	//});
 	$('#part_sel li a').mouseout(partOnMouseOut);
+
+	$('#search_input').css('font-style', 'oblique');
+	$('#search_input').val('искать по сайту и форуму');
+	$('#search_input').mouseover(reset_search_input);
 });
 
 function home()
@@ -26,6 +23,13 @@ function home()
 	window.location.replace("#");
 };
 
+function reset_search_input()
+{
+	$('#search_input').css('font-style', 'normal');
+	if ($('#search_input').val() == 'искать по сайту и форуму')
+		$('#search_input').val('');
+};
+
 function partOnMouseOver()
 {
 	if ($(this).parent().hasClass('part_selected_elem') == false)
@@ -33,13 +37,6 @@ function partOnMouseOver()
 		$(this).parent().addClass('partSelected');
 		$(this).css('color', 'white');
 	}
-	/* не работает
-	else
-	{
-		$(this).parent().css('background-image', '');
-		$(this).css('color', 'white');
-	}
-	*/
 };
 
 function partOnMouseOut()
@@ -49,11 +46,41 @@ function partOnMouseOut()
 		$(this).parent().removeClass('partSelected');
 		$(this).css('color', 'black');
 	}
-	/* не работает
-	else
-	{
-		$(this).parent().css('background-image', 'images/hover_sub_menu.gif');
-		$(this).css('color', 'black');
-	}
-	*/
+};
+
+function go_to_forum()
+{
+	window.location.href="http://forum.wbfree.net/";
+};
+
+function show_forum()
+{
+	$('#news_topics').hide();
+	$('#forum_topics').show();
+
+	$('#forum_selector').css('cursor', 'auto');
+	$('#forum_selector').css('margin-top', '0');
+	$('#forum_selector').css('padding-top', '10px');
+
+	$('#news_selector').css('border-left', '0');
+	$('#news_selector').css('cursor', 'pointer');
+	$('#news_selector').css('margin-top', '2px');
+	$('#news_selector').css('padding-left', '7px');
+	$('#news_selector').css('padding-top', '8px');
+};
+
+function show_news()
+{
+	$('#news_topics').show();
+	$('#forum_topics').hide();
+
+	$('#forum_selector').css('cursor', 'pointer');
+	$('#forum_selector').css('margin-top', '2px');
+	$('#forum_selector').css('padding-top', '8px');
+
+	$('#news_selector').css('cursor', 'auto');
+	$('#news_selector').css('margin-top', '0');
+	$('#news_selector').css('border-left', '1px solid #858510');
+	$('#news_selector').css('padding-left', '6px');
+	$('#news_selector').css('padding-top', '10px');
 };

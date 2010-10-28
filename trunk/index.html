@@ -36,25 +36,25 @@
 		<div id="serverstate">
 			<table>
 				<tr style="color: #fff;"><td colspan="4"><a href="#">WBMEDRL2</a> | <a href="#">1942-05-01</a></td></tr>
-				<tr><td>on-line -</td><td>
-					<table style="	border-spacing: 0px;"><tr>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; color: #fff; background: url(images/bg_red.gif) repeat-x;">7</td>
-						<td style="width: 20px; height: 15px; text-align: center; background: #fff;">vs</td>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;">5</td>
+				<tr><td>on-line &mdash;</td><td>
+					<table><tr>
+						<td style="color: #fff; background: url(images/bg_red.gif) repeat-x;">7</td>
+						<td>vs</td>
+						<td style="background: url(images/bg_gold.gif) repeat-x;">5</td>
 					</tr></table>
 				</td></tr>
 				<tr><td>wars won:</td><td>
-					<table style="border-spacing: 0px;"><tr>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; color: #fff; background: url(images/bg_red.gif) repeat-x;">6</td>
-						<td style="width: 20px; height: 15px; text-align: center; background: #fff;">vs</td>
-						<td style="width: 20px; height: 15px; text-align: center; font-weight: 600; background: url(images/bg_gold.gif) repeat-x;">7</td>
+					<table><tr>
+						<td style="color: #fff; background: url(images/bg_red.gif) repeat-x;">6</td>
+						<td>vs</td>
+						<td style="background: url(images/bg_gold.gif) repeat-x;">7</td>
 					</tr></table>
 				</td></tr>
 			</table>
 		</div>
 		<div id="serveraddr">
 			<table>
-				<tr><td>Адрес сервера -</td></tr>
+				<tr><td>Адрес сервера &mdash;</td></tr>
 				<tr><td style="font-size: 16px; font-weight: 600; color: #550;">89.108.124.170</td></tr>
 			</table>
 		</div>
@@ -79,7 +79,7 @@
 			</ul>
 		</div> <!--section_sel-->
 		<div id="search_panel">
-			<form method="get" action="http://google.com/search"><input name="q" type="text">
+			<form method="get" action="http://google.com/search"><input id="search_input" name="q" type="text">
 				<input type="hidden" name="hl" value="ru">
 				<input type="hidden" name="sitesearch" value="wbfree.net">
 				<input type="hidden" name="newwindow" value="1">
@@ -151,36 +151,33 @@
 
 			<!-- управление отображением тем форума или новостей -->
 			<div style="width: 240px; float: left; margin-top: 20px; border-bottom: 1px solid #656500;">
-				<div onclick="show_forum()"
+				<div id="forum_selector" onclick="show_forum()"
 					style="
-						/*border-bottom: 3px solid #fff;*/
-						padding: 10px 10px 0px 10px;
-						color: #fff;
-						cursor: pointer;
-						width: 100px;
-						height: 23px;
 						float: left;
-						background-color: #858510;">
+						background-color: #858510;
+						color: #fff;
+						width: 100px;
+						padding: 10px 10px 0px 10px;
+						height: 23px;">
 					на Форуме <img src="images/ico_forum.gif" style="float: right;">
 				</div>
-				<div onclick="show_news()"
-style="
-padding: 8px 7px 0px 7px;
-cursor: pointer;
-width: 105px;
-height: 22px;
-float: left;
-margin-top: 2px;
-/*left: 118px; top: 2px; vertical-align: bottom;*/
-background-color: #fff;
-border: 1px solid #858510;
-border-left: 0;
-border-bottom: 0;
-color: #124;">
+				<div id="news_selector" onclick="show_news()"
+					style="
+						cursor: pointer;
+						float: left;
+						background-color: #fff;
+						border: 1px solid #858510;
+						width: 105px;
+						border-left: 0;
+						border-bottom: 0;
+						color: #124;
+						padding: 8px 7px 0px 7px;
+						height: 22px;
+						margin-top: 2px;">
 					Новости
 				</div>
 			</div>
-			<div style="float: left; width: 240px;">
+			<div id="forum_topics" style="float: left; width: 240px;">
 				<div style="padding: 7px; background-color: #858510; border-bottom: 1px solid #656500; border-top: 1px solid #bb4; font-size: 11px;">
 					<h2 style="font-size: 11px; margin: 0;">15.07.2010</h2>
 					<a style="color: #fff;" href="#">планы на открытую бету 1.68</a>
@@ -190,8 +187,11 @@ color: #124;">
 					<a style="color: #fff;" href="#">обсуждение проекта нового сайта wbfree.net</a>
 				</div>
 				<div style="margin-bottom: 20px; padding: 7px; background-color: #393a00; font-size: 11px; /*border-bottom: 1px solid #656500; border-top: 1px solid #bb4;*/">
-					<a style="color: #fff;" href="#">все обсуждения</a>
+					<a style="color: #fff;" href="http://forum.wbfree.net/">все обсуждения</a>
 				</div>
+			</div>
+			<div id="news_topics" style="height: 130px; background-color: #858510; float: left; width: 238px; display: none; border: 1px solid #656500; border-top: 1px solid #bb4;">
+				Новостя...
 			</div>
 
 		</div> <!--leftbar-->
