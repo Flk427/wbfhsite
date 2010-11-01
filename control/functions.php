@@ -17,4 +17,5 @@
 		$params_str = "index.php?".implode('&', $params);
 		return $params_str;
 	}
+
 ?>

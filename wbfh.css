@@ -33,10 +33,9 @@ h1 {
 
 /* Враппер фиксированной ширины для каждой секции */
 
-#wrapper {
+.wrapper {
 	margin: 0 auto;
 	width: 990px;
-	b-ackground-color: #cc0;
 	height: 100%;
 }
 
@@ -131,7 +130,7 @@ h1 {
 
 /* Выбор секции */
 
-#section_menu {
+#category_menu {
 	font-family: "Times New Roman", Georgia, Arial;
 	background-color: #000;
 	font-size: 15px;
@@ -139,38 +138,30 @@ h1 {
 	height: 35px;
 }
 
-#section_sel {
+#category_sel {
 	float: left;
 	width: 625px;
 }
 
-#section_sel a {
+#category_sel a {
 	color: #fff;
+	border-bottom: 1px solid;
 }
 
-#section_sel .section_first_elem {
+#category_sel .category_first_elem {
 	line-height: 15px;
 	padding: 10px 0 10px 0 /*left*/ ;
 	margin: 0 15px 0 15px;
 }
 
-#section_sel .section_other_elem {
+#category_sel .category_other_elem {
 	line-height: 15px;
 	padding: 10px 0 10px 0;
 	margin: 0 25px 0 25px
 }
 
-#section_sel .section_other_elem a {
-	border-bottom: 1px solid;
-}
-
-#section_sel .section_selected_elem {
+#category_sel .category_selected_elem {
 	background: url(images/hover_main_menu.gif) no-repeat bottom;
-}
-
-.sectSelected {
-	background: url(images/hover_sub_menu.gif) repeat-x bottom;
-	border-bottom: 0px none;
 }
 
 #search_panel {
@@ -207,37 +198,37 @@ h1 {
 
 /* Выбор раздела */
 
-#part_menu {
+#section_menu {
 	font-family: Arial;
 	font-size: 12px;
 	background-color: #fff;
 	height: 30px;
 }
 
-#part_menu a {
+#section_menu a {
 	color: #000;
 }
 
-#part_menu .part_other_elem {
+#section_menu .section_other_elem {
 	line-height: 10px;
 	padding: 10px 10px 10px 10px;
 }
 
-#part_menu a {
+#section_menu a {
 	border-bottom: 1px solid;
 }
 
-#part_menu .part_first_elem {
+#section_menu .section_first_elem {
 	line-height: 10px;
 	padding: 10px 10px 10px 10px;
 	margin: 0 0 0 5px;
 }
 
-#part_menu .part_selected_elem {
+#section_menu .section_selected_elem {
 	background: url(images/hover_sub_menu.gif) repeat-x bottom;
 }
 
-.partSelected {
+.sectionSelected {
 	background: url(images/bg_sub_menu_on.gif) repeat;
 }
 
@@ -283,7 +274,8 @@ h1 {
 
 /* Главный блок */
 
-#main {
+#content {
+	line-height: 20px;
 }
 
 #leftbar {

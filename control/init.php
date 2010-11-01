@@ -6,6 +6,9 @@
 	//$_GET['section'] = 'faq';
 	//$_GET['part'] = 'wb';
 
+	//$_GET['category'] = 'newbee';
+	//$_GET['section'] = 'takeoff';
+
 	unset($content_tree);
 
 ?>
