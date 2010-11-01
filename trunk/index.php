@@ -1,115 +1,100 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <?php
-
-	@require_once('./control/init.php');
-	@require_once('./control/functions.php');
-	@require_once('./control/config.php');
-	@require_once('./control/common.php');
-
+	require_once('./control/init.php');
+	require_once('./control/functions.php');
+	require_once('./control/config.php');
+	require_once('./control/common.php');
 ?>
 
 <html>
 
 <head>
-	<title>WarBirds FreeHost - FreeWare WWII Air Combat Simulator</title>
+	<title>WarBirds FreeHost - FreeWare WWII Air Combat Simulator - <?php echo $where_am_i;?>
+	</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Проект нового сайта бесплатного авиасимулятора WarBirds FreeHost">
 	<meta name="keywords" content="WarBirds FreeHost war birds free host simulator бесплатный симулятор">
-
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
-
-	<link type="text/css" rel="StyleSheet" href="default.css">
-	<link rel="stylesheet" type="text/css" href="scripts/skins/wbfh/skin.css">
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
-
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery('#mycarousel').jcarousel({
-        // Configuration goes here
-        scroll: 1,
-        wrap: "circular"
-    });
-});
-</script>
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
+	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="scripts/wbfh.js"></script>
 
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3557915-1']);
-  _gaq.push(['_trackPageview']);
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-3557915-1']);
+	_gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
 </script>
 </head>
 
 <body>
 
-<!-- <div id="bg"> -->
-
-<div id="wrapper">
-
 <div id="header">
-<?php @require_once('./control/header.php'); ?>
-</div>
-<!-- end header -->
+	<?php require_once('./control/header.php'); ?>
+</div><!--header-->
 
-<div id="page">
+<div id="category_menu">
+	<?php require_once('./control/category_menu.php'); ?>
+</div> <!--category_menu-->
 
-<div id="sidebar1" class="sidebar">
-<?php @require_once('./control/menu.php'); ?>
-</div> <!-- menu -->
+<div id="section_menu">
+	<?php require_once('./control/section_menu.php'); ?>
+</div> <!--section_menu-->
 
-<div id="sidebar2" class="sidebar">
-<?php @require_once('./control/info.php'); ?>
-</div><!-- info -->
+<div id="dl_and_shots">
+	<div class="wrapper">
+		<div id="download">
+			<table>
+				<tr><td style="font-size: 28px; line-height: 28px; padding-top: 15px;">War<span style="font-weight: 600;">Birds & FHL</span></td></tr>
+				<tr><td style="font-size: 14px; padding-bottom: 4px;">Полная сборка</span></td></tr>
+				<tr><td class="about"><span class="about_caption">Разработчик:</span> <span class="about_value">iEntertainment Network</span></span></td></tr>
+				<tr><td class="about"><span class="about_caption">Издатель:</span> <span class="about_value">Atari</span></td></tr>
+				<tr><td class="about"><span class="about_caption">Год выпуска:</span> <span class="about_value">2001</span></td></tr>
+				<tr><td class="about"><span class="about_caption">Жанр:</span> <span class="about_value">Авиасимуляторы</span></td></tr>
+				<tr><td class="about"><span class="about_caption">Платформа:</span> <span class="about_value">Windows, все версии</span></td></tr>
+				<tr><td class="about"><span class="about_caption">Размер:</span> <span class="about_value">50 Мб</span></td></tr>
+				<tr><td style="padding-top: 15px;"><img src="images/download_button.gif" alt="Скачать бесплатно."></td></tr>
+			</table>
+		</div> <!--download-->
+		<div id="shots">
+			<table>
+			<tr><td style="padding: 15px 0;">Скриншоты игры</td></tr>
+			<tr><td><img src="images/screenshot.jpg" alt="Скриншоты."></td></tr>
+			</table>
+		</div> <!--shots-->
+	</div> <!--wrapper-->
+</div> <!--dl_and_shots-->
 
-<div class="post">
-	<?php
-		// вывести файл
-		// В случае возникновения ошибки вернёт FALSE, если только функция не была вызвана как @readfile(), и выведет сообщение об ошибке.
+<div id="main">
+	<div class="wrapper">
+	<?php require_once('./control/leftbar.php'); ?>
+	<?php require_once('./control/centerbar.php'); ?>
+	<?php require_once('./control/rightbar.php'); ?>
+	</div> <!--wrapper-->
 
-		//@readfile("$content_path/".$content_tree[$category][$section][$part]['content']);
-		$content = file_get_contents("$content_path/".$content_tree[$category][$section][$part]['content']);
-
-		if ($content_tree[$category][$section][$part]['nobr'])
-		{
-			echo nl2br($content);
-		}
-		else
-		{
-			echo $content;
-		}
-	?>
-</div> <!-- post -->
-
-<!-- <div style="clear:right;">&nbsp;</div> -->
 <br clear="all"> <!-- IE6 hack -->
 
-</div> <!-- page -->
+</div> <!--main-->
 
 <div id="footer">
-	<div class="footerlinks">
-		<ul>
-			<li><a href="http://forum.wbfree.net/" title="Форум">Форум</a></li>
-			<li>Ссылка на рейтинги</li>
-			<li>Ссылка на википедию</li>
-			<li>Ссылка на скорости</li>
-		</ul>
-	</div>
-	&nbsp;
-	<!-- <p>Designed with Free CSS Templates Blend theme</p> -->
-</div>
-
-</div><!-- wrapper - тело с л. и п. меню - wrapper -->
+	<div class="wrapper">
+		<div id="design_info">
+			<img src="images/ames_design_logo.gif" style="float: left; margin-right: 10px;">
+			дизайн - <a href="http://www.ames.am/">AMES Design</a>
+		</div>
+		<div id="copyright">
+			&copy; 2010 Warbirds Freehost. Все права защищены.
+		</div>
+	</div> <!--wrapper-->
+</div> <!--footer-->
 
 </body>
 </html>
+

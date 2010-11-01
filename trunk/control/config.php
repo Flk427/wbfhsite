@@ -29,6 +29,7 @@
 
 	$content_tree['newbee']['about']['']['caption'] = 'Что это такое?';
 	$content_tree['newbee']['about']['']['content'] = 'newbee_about.html';
+	$content_tree['newbee']['about']['']['nobr'] = '0';
 
 	$content_tree['newbee']['about']['game']['caption'] = 'Об игре';
 	$content_tree['newbee']['about']['game']['content'] = 'newbee_about_game.html';
@@ -83,4 +84,9 @@
 	$content_tree['newbee']['faq']['fh']['content'] = 'newbee_faq_fh.html';
 	$content_tree['newbee']['faq']['fh']['nobr'] = '1';
 
+	$content_tree['players']['']['']['caption'] = 'Игрокам';
+	$content_tree['players']['']['']['content'] = 'players.html';
+
+	$content_tree['veteran']['']['']['caption'] = 'Ветеранам и активистам';
+	$content_tree['veteran']['']['']['content'] = 'veteran.html';
 ?>

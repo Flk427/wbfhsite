@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	$('#part_sel li a').mouseover(partOnMouseOver);
-	$('#part_sel li a').mouseout(partOnMouseOut);
+	$('#section_sel li a').mouseover(sectionOnMouseOver);
+	$('#section_sel li a').mouseout(sectionOnMouseOut);
 
 	$('#search_input').css('font-style', 'oblique');
 	$('#search_input').val('искать по сайту и форуму');
@@ -30,20 +30,20 @@ function reset_search_input()
 		$('#search_input').val('');
 };
 
-function partOnMouseOver()
+function sectionOnMouseOver()
 {
-	if ($(this).parent().hasClass('part_selected_elem') == false)
+	if ($(this).parent().hasClass('section_selected_elem') == false)
 	{
-		$(this).parent().addClass('partSelected');
+		$(this).parent().addClass('sectionSelected');
 		$(this).css('color', 'white');
 	}
 };
 
-function partOnMouseOut()
+function sectionOnMouseOut()
 {
-	if ($(this).parent().hasClass('part_selected_elem') == false)
+	if ($(this).parent().hasClass('section_selected_elem') == false)
 	{
-		$(this).parent().removeClass('partSelected');
+		$(this).parent().removeClass('sectionSelected');
 		$(this).css('color', 'black');
 	}
 };
