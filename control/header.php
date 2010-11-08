@@ -6,16 +6,16 @@
 				<tr style="color: #fff;"><td colspan="4"><a href="#">WBMEDRL2</a> | <a href="#">1942-05-01</a></td></tr>
 				<tr><td>on-line &mdash;</td><td>
 					<table><tr>
-						<td style="color: #fff; background: url(images/bg_red.gif) repeat-x;">7</td>
-						<td>vs</td>
-						<td style="background: url(images/bg_gold.gif) repeat-x;">5</td>
+						<td class="count_red">7</td>
+						<td class="red_vs_gold">vs</td>
+						<td class="count_gold">5</td>
 					</tr></table>
 				</td></tr>
 				<tr><td>wars won:</td><td>
 					<table><tr>
-						<td style="color: #fff; background: url(images/bg_red.gif) repeat-x;">6</td>
-						<td>vs</td>
-						<td style="background: url(images/bg_gold.gif) repeat-x;">7</td>
+						<td class="count_red">6</td>
+						<td class="red_vs_gold">vs</td>
+						<td class="count_gold">7</td>
 					</tr></table>
 				</td></tr>
 			</table>
@@ -30,7 +30,22 @@
 		</div>
 		<div id="langselect">
 			<table>
-				<tr><td><a href="#">English</a> | <a href="#">Deutsch</a> | <a href="#">Polski</a> | <a href="#">Portuquesa</a></td></tr>
+				<tr><td>
+<?php
+	unset($lang_select);
+
+	$i = 0;	
+
+	if ($lang != 'en') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=en'>English</a>";
+	if ($lang != 'de') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=de'>Deutsch</a>";
+	if ($lang != 'pl') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pl'>Polski</a>";
+	if ($lang != 'pt') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pt'>Portuquesa</a>";
+	if ($lang != 'ru') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=ru'>Russian</a>";
+
+	echo (implode('&nbsp;|&nbsp;', $lang_select));
+
+ ?>
+				</td></tr>
 				<tr><td><img src="images/map_off.gif" alt="Навигация">
 					<img src="images/home_on.gif" alt="На главную"></td></tr>
 			</table>
