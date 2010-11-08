@@ -9,6 +9,8 @@
 	//$_GET['category'] = 'newbee';
 	//$_GET['section'] = 'takeoff';
 
+	//$_GET['lang'] = 'pl';
+
 	unset($content_tree);
 
 ?>

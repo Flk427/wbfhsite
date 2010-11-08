@@ -3,8 +3,8 @@ $(document).ready(function() {
 	$('#section_sel li a').mouseout(sectionOnMouseOut);
 
 	$('#search_input').css('font-style', 'oblique');
-	$('#search_input').val('искать по сайту и форуму');
-	$('#search_input').mouseover(reset_search_input);
+	$('#search_input').val('искать на сайте');
+	$('#search_input').mouseover(resetSearchInput);
 });
 
 function home()
@@ -23,10 +23,10 @@ function home()
 	window.location.replace("#");
 };
 
-function reset_search_input()
+function resetSearchInput()
 {
 	$('#search_input').css('font-style', 'normal');
-	if ($('#search_input').val() == 'искать по сайту и форуму')
+	if ($('#search_input').val() == 'искать на сайте')
 		$('#search_input').val('');
 };
 
@@ -48,12 +48,17 @@ function sectionOnMouseOut()
 	}
 };
 
-function go_to_forum()
+function goToForum()
 {
 	window.location.href="http://forum.wbfree.net/";
 };
 
-function show_forum()
+function downloadClick()
+{
+	window.location.href="http://whereat.wbfree.net/wb.zip";
+};
+
+function showForum()
 {
 	$('#news_topics').hide();
 	$('#forum_topics').show();
@@ -69,7 +74,7 @@ function show_forum()
 	$('#news_selector').css('padding-top', '8px');
 };
 
-function show_news()
+function showNews()
 {
 	$('#news_topics').show();
 	$('#forum_topics').hide();

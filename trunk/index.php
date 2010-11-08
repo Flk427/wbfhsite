@@ -2,9 +2,9 @@
 
 <?php
 	require_once('./control/init.php');
-	require_once('./control/functions.php');
 	require_once('./control/config.php');
 	require_once('./control/common.php');
+	require_once('./control/functions.php');
 ?>
 
 <html>
@@ -60,7 +60,7 @@
 				<tr><td class="about"><span class="about_caption">Жанр:</span> <span class="about_value">Авиасимуляторы</span></td></tr>
 				<tr><td class="about"><span class="about_caption">Платформа:</span> <span class="about_value">Windows, все версии</span></td></tr>
 				<tr><td class="about"><span class="about_caption">Размер:</span> <span class="about_value">50 Мб</span></td></tr>
-				<tr><td style="padding-top: 15px;"><img src="images/download_button.gif" alt="Скачать бесплатно."></td></tr>
+				<tr><td style="padding-top: 15px;"><img onclick="downloadClick()" style="cursor:pointer;" src="images/download_button.gif" alt="Скачать бесплатно." title="Скачать бесплатно."/></td></tr>
 			</table>
 		</div> <!--download-->
 		<div id="shots">

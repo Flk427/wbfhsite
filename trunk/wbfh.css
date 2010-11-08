@@ -84,7 +84,7 @@ h1 {
 }
 
 #serverstate table table{
-	border-width: 0;
+	/*border-width: 0;*/
 	border-spacing: 0;
 }
 
@@ -92,8 +92,21 @@ h1 {
 	width: 20px;
 	height: 15px;
 	text-align: center;
-	background: #fff;
+	/*background: #fff;*/
 	font-weight: 600;
+}
+
+.count_red {
+	color: #fff;
+	background: url(images/bg_red.gif) repeat-x;
+}
+
+.red_vs_gold {
+	background: #fff;
+}
+
+.count_gold {
+	background: url(images/bg_gold.gif) repeat-x;
 }
 
 #serveraddr {
@@ -271,6 +284,72 @@ h1 {
 	font-size: 20px;
 }
 
+#leftbar {
+	float: left;
+	width: 255px;
+}
+
+#forum_selector {
+	float: left;
+	background-color: #858510;
+	color: #fff;
+	width: 100px;
+	padding: 10px 10px 0px 10px;
+	height: 23px;
+}
+
+#news_selector {
+	float: left;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #858510;
+	width: 105px;
+	border-left: 0;
+	border-bottom: 0;
+	color: #124;
+	padding: 8px 7px 0px 7px;
+	height: 22px;
+	margin-top: 2px;
+}
+
+#leftbar > div {
+	width: 240px;
+}
+
+#forum_topics {
+	float: left;
+}
+
+#forum_topics > div {
+	padding: 7px;
+	background-color: #858510;
+	border-bottom: 1px solid #656500;
+	border-top: 1px solid #bb4;
+	font-size: 11px;
+}
+
+#forum_topics h2 {
+	font-size: 11px; margin: 0;
+}
+
+#forum_topics a {
+	color: #fff;
+}
+
+#forum_topics #all_topics {
+	margin-bottom: 20px;
+	padding: 7px;
+	background-color: #393a00;
+	font-size: 11px;
+}
+
+#news_topics {
+	height: 130px;
+	background-color: #858510;
+	float: left;
+	display: none;
+	border-top: 1px solid #bb4;
+}
 
 /* Главный блок */
 
@@ -278,24 +357,34 @@ h1 {
 	line-height: 20px;
 }
 
-#leftbar {
-	float: left;
-	width: 255px;
-}
-
 #centerbar {
 	width: 500px;
 	float: left;
 }
 
-#centerbar a {
+#content a {
 	color: #A11;
 	border-bottom: 1px solid;
 }
 
 #links {
+	margin-top: 30px;
+	height: 117px;
+	background: url(images/bg_links.gif) repeat-x;
+	/*
 	background-color: #bbb;
 	height: 80px;
+	*/
+}
+
+#links .link {
+	float: left;
+	width: 180px;
+	margin-top: 6px;
+}
+
+#links a {
+	color: #fff;
 }
 
 #rightbar {
@@ -306,6 +395,80 @@ h1 {
 
 #rightbar a {
 	color: #fff;
+}
+
+#rightbar .rating {
+	float: left;
+	width: 235px;
+	margin-top: 20px;
+}
+
+#rightbar .rating .num {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	margin: 0 1px 1px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+#rightbar .rating .num_red {
+	background: url(images/bg_best_pilots_red.gif);
+	color: #fff;
+}
+
+#rightbar .rating .num_gold {
+	background: url(images/bg_best_pilots_gold.gif);
+}
+
+#rightbar .rating .name {
+	width: 180px;
+	padding: 0;
+	padding-left: 8px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	white-space: nowrap;
+}
+
+#rightbar .rating .name_red {
+	background: url(images/bg_best_pilots_red_name.gif) repeat-x;
+}
+
+#rightbar .rating .name_gold {
+	background: url(images/bg_best_pilots_gold_name.gif) repeat-x;
+}
+
+#tracks {
+	float: left;
+	width: 235px;
+	margin-top: 20px;
+}
+
+#tracks h3 {
+	margin: 0;
+}
+
+#tracks .track_num {
+	width: 20px;
+	height: 16px;
+	padding: 0;
+	text-align: center;
+	font-size: 10px;
+	background: url(images/bg_best_tracks.gif) repeat-x;
+}
+
+#tracks .track_name {
+	width: 178px; padding: 0; font-size: 10px; color: #fff; white-space: nowrap;
+}
+
+.track_name img {
+	padding: 0 5px;
+	border: 0;
+}
+
+.track_name a {
+	border-bottom: 1px solid;
 }
 
 /* Подвал */
