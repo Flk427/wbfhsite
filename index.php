@@ -68,7 +68,7 @@
 		<div id="shots">
 			<table>
 			<tr><td style="padding: 15px 0;">Скриншоты игры</td></tr>
-			<tr><td><a rel="lightbox" title="ФАУ-1 в полёте" href="images/Shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/screenshot.jpg"/></a></td></tr>
+			<tr><td><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/screenshot.jpg"/></a></td></tr>
 			</table>
 		</div> <!--shots-->
 	</div> <!--wrapper-->
