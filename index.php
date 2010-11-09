@@ -17,9 +17,11 @@
 	<meta name="keywords" content="WarBirds FreeHost war birds free host simulator бесплатный симулятор">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
+	<link type="text/css" rel="StyleSheet" href="lightbox.css">
 	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
 	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="scripts/wbfh.js"></script>
+	<script type="text/javascript" src="scripts/lightbox.js"></script>
 
 <script type="text/javascript">
 	var _gaq = _gaq || [];
@@ -66,7 +68,7 @@
 		<div id="shots">
 			<table>
 			<tr><td style="padding: 15px 0;">Скриншоты игры</td></tr>
-			<tr><td><img src="images/screenshot.jpg" alt="Скриншоты."></td></tr>
+			<tr><td><a rel="lightbox" href="images/Shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/screenshot.jpg" alt="Скриншоты"/></a></td></tr>
 			</table>
 		</div> <!--shots-->
 	</div> <!--wrapper-->
