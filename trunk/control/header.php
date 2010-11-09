@@ -36,11 +36,11 @@
 
 	$i = 0;	
 
+	if ($lang != 'ru') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=ru'>Russian</a>";
 	if ($lang != 'en') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=en'>English</a>";
 	if ($lang != 'de') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=de'>Deutsch</a>";
 	if ($lang != 'pl') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pl'>Polski</a>";
 	if ($lang != 'pt') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pt'>Portuquesa</a>";
-	if ($lang != 'ru') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=ru'>Russian</a>";
 
 	echo (implode('&nbsp;|&nbsp;', $lang_select));
 
