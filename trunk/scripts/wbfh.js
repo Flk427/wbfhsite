@@ -9,7 +9,7 @@ $(document).ready(function() {
     jQuery('#wbcarousel').jcarousel({
         // Configuration goes here
         scroll: 1,
-        wrap: "circular"
+        //wrap: "circular"
     });
 });
 

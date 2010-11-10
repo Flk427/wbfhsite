@@ -74,7 +74,19 @@
 			<tr><td>
 				<ul id="wbcarousel" class="jcarousel-skin-tango">
 				<li>
-					<a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+				</li>
+				<li>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+				</li>
+				<li>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+				</li>
+				<li>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+				</li>
+				<li>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				</ul>
 			</td></tr>
