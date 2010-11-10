@@ -18,10 +18,13 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
 	<link type="text/css" rel="StyleSheet" href="lightbox.css">
-	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
-	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<!--<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>-->
 	<script type="text/javascript" src="scripts/wbfh.js"></script>
 	<script type="text/javascript" src="scripts/lightbox.js"></script>
+	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="scripts/skins/wbfh/skin.css">
 
 <script type="text/javascript">
 	var _gaq = _gaq || [];
@@ -68,7 +71,13 @@
 		<div id="shots">
 			<table>
 			<tr><td style="padding: 15px 0;">Скриншоты игры</td></tr>
-			<tr><td><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/screenshot.jpg"/></a></td></tr>
+			<tr><td>
+				<ul id="wbcarousel" class="jcarousel-skin-tango">
+				<li>
+					<a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a>
+				</li>
+				</ul>
+			</td></tr>
 			</table>
 		</div> <!--shots-->
 	</div> <!--wrapper-->
