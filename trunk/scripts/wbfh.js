@@ -5,6 +5,12 @@ $(document).ready(function() {
 	$('#search_input').css('font-style', 'oblique');
 	$('#search_input').val('искать на сайте');
 	$('#search_input').mouseover(resetSearchInput);
+
+    jQuery('#wbcarousel').jcarousel({
+        // Configuration goes here
+        scroll: 1,
+        wrap: "circular"
+    });
 });
 
 function home()
