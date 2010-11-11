@@ -1,9 +1,10 @@
 <?php
 
-	//require_once('google.translator.php');
+	require_once('google.translator.php');
 
 	function ContentToParams($content_str)
 	{
+		global $lang;
 		// проверить на внешний url
 		if (strncmp($content_str, 'http://', strlen('http://')) == 0)
 		{
@@ -43,13 +44,13 @@
 		if ($result == '' && extension_loaded ('curl'))
 		{
 			// если не знаем - спросим у Гугла
-			//$result = Google_Translate_API::translate($glossary[$word][$def_lang], $def_lang, $lang);
-			$result = google_translate($glossary[$word][$def_lang], $def_lang, $lang);
-
+			$result = Google_Translate_API::translate($glossary[$word][$def_lang], $def_lang, $lang);
+			//$result = google_translate($glossary[$word][$def_lang], $def_lang, $lang);
+			echo $glossary[$word][$def_lang]."###".$result."!!!";
 			// view the translated string
 			//var_dump($str);
 		}
-		*/
+		//*/
 
 		return $result;
 	}
@@ -68,7 +69,10 @@
 		$c = curl_init();
 		curl_setopt($c, CURLOPT_URL, $url);
 		curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($c, CURLOPT_HEADER, 0);
+		curl_setopt($c, CURLOPT_FOLLOWLOCATION, 1);
 		$b = curl_exec($c);
+		echo "CE:".curl_error($c);
 		curl_close($c);
 
 		$json = json_decode($b, true);
