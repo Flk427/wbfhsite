@@ -1,8 +1,8 @@
 			<div id="rightbar">
-				<h1>На вершине</h1>
+				<h1><?php trp('Top'); ?></h1>
 				<div style="width: 215px; height: 5px; background: #c80000;"></div>
 				<div class="rating">
-					<h2 style="margin: 0;"><img style="margin-right: 10px;" src="images/ico_pilots.gif">Пилоты</h2>
+					<h2 style="margin: 0;"><img style="margin-right: 10px;" src="images/ico_pilots.gif"><?php trp('Pilots'); ?></h2>
 					<table>
 						<tr>
 							<td class="num num_red">1</td>
@@ -27,7 +27,7 @@
 					</table>
 				</div>
 				<div class="rating">
-					<h2 style="margin: 0;"><img style="margin-right: 10px;" src="images/ico_esc.gif">Эскадрилии</h2>
+					<h2 style="margin: 0;"><img style="margin-right: 10px;" src="images/ico_esc.gif"><?php trp('Squads'); ?></h2>
 					<table>
 						<tr>
 							<td class="num num_red">1</td>
@@ -52,7 +52,7 @@
 					</table>
 				</div>
 				<div id="tracks">
-					<h3>Лучшие треки</h3>
+					<h3><?php trp('Best tracks'); ?></h3>
 					<table style="background: url(images/bg_best_tracks_large.jpg) no-repeat;">
 						<tr>
 							<td class="track_num">1</td>
@@ -70,6 +70,6 @@
 								<img src="images/arrow_tracks.gif"><a href="#">Третий трек</a></td>
 						</tr>
 					</table>
-					<div style=" width: 199px; height: 20px; padding: 5px 0 0 5px; margin: 0 0 5px 0; background: #243; font-size: 11px;" colspan="2"><a style="color: #cc3; border-bottom: 1px solid;" href="#">все треки</a></div>
+					<div style=" width: 199px; height: 20px; padding: 5px 0 0 5px; margin: 0 0 5px 0; background: #243; font-size: 11px;" colspan="2"><a style="color: #cc3; border-bottom: 1px solid;" href="#"><?php trp('All tracks'); ?></a></div>
 				</div>
 			</div> <!--rightbar-->

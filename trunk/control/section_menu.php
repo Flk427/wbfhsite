@@ -21,16 +21,16 @@
 				$sect_class = "section_other_elem";
 			}
 
-			$url = ContentToParams($content_tree[$category][$sect_key]['']['content'])."&lang=$lang";
+			$url = ContentToParams($content_tree[$category][$sect_key]['']['content']);
 
 			if ($sect_key == $section)
 			{
 				$sect_class .= " section_selected_elem";
-				echo "				<li class='$sect_class'>".$content_tree[$category][$sect_key]['']['caption'][$lang]."</li>\n";
+				echo "				<li class='$sect_class'>".tr($content_tree[$category][$sect_key]['']['caption'])."</li>\n";
 			}
 			else
 			{
-				echo "				<li class='$sect_class'><a href='$url'>".$content_tree[$category][$sect_key]['']['caption'][$lang]."</a></li>\n";
+				echo "				<li class='$sect_class'><a href='$url'>".tr($content_tree[$category][$sect_key]['']['caption'])."</a></li>\n";
 			}
 
 			$first_sect = false;

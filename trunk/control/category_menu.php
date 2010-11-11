@@ -25,16 +25,16 @@
 
 			echo "				<li class='$cat_class'>";
 
-			$url = ContentToParams($content_tree[$cat_key]['']['']['content'])."&lang=$lang";
+			$url = ContentToParams($content_tree[$cat_key]['']['']['content']);
 
 			if ($cat_key != $category)
 			{
 				echo "<a href='$url'>";
-				echo $content_tree[$cat_key]['']['']['caption'][$lang]."</a></li>\n";
+				echo tr($content_tree[$cat_key]['']['']['caption'])."</a></li>\n";
 			}
 			else
 			{
-				echo $content_tree[$cat_key]['']['']['caption'][$lang]."</li>\n";
+				echo tr($content_tree[$cat_key]['']['']['caption'])."</li>\n";
 			}
 
 			$first_cat = false;

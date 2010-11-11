@@ -1,16 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <?php
+//phpinfo();
+?>
+
+<?php
 	require_once('./control/init.php');
 	require_once('./control/config.php');
-	require_once('./control/common.php');
+	require_once('./control/glossary.php');
 	require_once('./control/functions.php');
+	require_once('./control/common.php');
 ?>
 
 <html>
 
 <head>
-	<title>WarBirds FreeHost - FreeWare WWII Air Combat Simulator - <?php echo $where_am_i;?>
+	<title>WarBirds FreeHost - Freeware WWII Air Combat Simulator - <?php echo $where_am_i;?>
 	</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Проект нового сайта бесплатного авиасимулятора WarBirds FreeHost">
@@ -58,35 +63,35 @@
 		<div id="download">
 			<table>
 				<tr><td style="font-size: 28px; line-height: 28px; padding-top: 15px;">War<span style="font-weight: 600;">Birds & FHL</span></td></tr>
-				<tr><td style="font-size: 14px; padding-bottom: 4px;">Полная сборка</span></td></tr>
-				<tr><td class="about"><span class="about_caption">Разработчик:</span> <span class="about_value">iEntertainment Network</span></span></td></tr>
-				<tr><td class="about"><span class="about_caption">Издатель:</span> <span class="about_value">Atari</span></td></tr>
-				<tr><td class="about"><span class="about_caption">Год выпуска:</span> <span class="about_value">2001</span></td></tr>
-				<tr><td class="about"><span class="about_caption">Жанр:</span> <span class="about_value">Авиасимуляторы</span></td></tr>
-				<tr><td class="about"><span class="about_caption">Платформа:</span> <span class="about_value">Windows, все версии</span></td></tr>
-				<tr><td class="about"><span class="about_caption">Размер:</span> <span class="about_value">50 Мб</span></td></tr>
-				<tr><td style="padding-top: 15px;"><img onclick="downloadClick()" style="cursor:pointer;" src="images/download_button.gif" alt="Скачать бесплатно." title="Скачать бесплатно."/></td></tr>
+				<tr><td style="font-size: 14px; padding-bottom: 4px;"><?php trp('Standard pack'); ?></span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Developer'); ?>:</span> <span class="about_value">iEntertainment Network</span></span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Publisher'); ?>:</span> <span class="about_value">Atari</span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Year'); ?>:</span> <span class="about_value">2001</span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Genre'); ?>:</span> <span class="about_value"><?php trp('Avia simulators'); ?></span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Platform'); ?>:</span> <span class="about_value"><? trp('Windows'); ?></span></td></tr>
+				<tr><td class="about"><span class="about_caption"><?php trp('Size'); ?>:</span> <span class="about_value">50 <?php trp('Mb'); ?></span></td></tr>
+				<tr><td style="padding-top: 15px;"><a href="http://whereat.wbfree.net/wb.zip"><img style="cursor:pointer; border: 0 none;" src="images/download_button.gif" alt="<?php trp('Download free'); ?>" title="<?php trp('Download free'); ?>"/></a></td></tr>
 			</table>
 		</div> <!--download-->
 		<div id="shots">
 			<table>
-			<tr><td style="padding: 15px 0;">Скриншоты игры</td></tr>
+			<tr><td style="padding: 15px 0;"><?php trp('Game screenshots'); ?></td></tr>
 			<tr><td>
 				<ul id="wbcarousel" class="jcarousel-skin-tango">
 				<li>
-					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0 none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				<li>
-					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0 none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				<li>
-					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0 none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				<li>
-					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0 none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				<li>
-					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0px none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
+					<div><a rel="lightbox" title="ФАУ-1 в полёте" href="images/shots/Scr0000-0.jpg"><img style="border: 0 none;" src="images/shots/thumbs/Scr0000-0-thumb.jpg"/></a></div>
 				</li>
 				</ul>
 			</td></tr>
@@ -110,10 +115,10 @@
 	<div class="wrapper">
 		<div id="design_info">
 			<img src="images/ames_design_logo.gif" style="float: left; margin-right: 10px;">
-			дизайн - <a href="http://www.ames.am/">AMES Design</a>
+			<?php trp('Design'); ?> - <a href="http://www.ames.am/">AMES Design</a>
 		</div>
 		<div id="copyright">
-			&copy; 2010 Warbirds Freehost. Все права защищены.
+			&copy; 2010 Warbirds Freehost. <?php trp('All rights'); ?>.
 		</div>
 	</div> <!--wrapper-->
 </div> <!--footer-->
