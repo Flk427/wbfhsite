@@ -52,7 +52,7 @@
 
 	if ($lang != 'pl') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pl'>Polski</a>";
 	if ($lang != 'pt') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pt'>Portuquesa</a>";
-	if ($lang != 'tr') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=pt'>Turkish</a>";
+	if ($lang != 'tr') $lang_select[$i++] = "<a href='index.php?category=$category&section=$section&part=$part&lang=tr'>Turkish</a>";
 
 	echo (implode('&nbsp;|&nbsp;', $lang_select));
 
