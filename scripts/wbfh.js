@@ -13,9 +13,10 @@ $(document).ready(function() {
     });
 });
 
+/*
 function home()
 {
-	/*
+	/-*
 	var i;
 	for(i=0;i<document.links.length;i++)
 	{
@@ -25,9 +26,10 @@ function home()
 			break;
 		}
 	}
-	*/
+	*-/
 	window.location.replace("#");
 };
+*/
 
 function resetSearchInput()
 {
@@ -59,10 +61,12 @@ function goToForum()
 	window.location.href="http://forum.wbfree.net/";
 };
 
+/*
 function downloadClick()
 {
 	window.location.href="http://whereat.wbfree.net/wb.zip";
 };
+*/
 
 function showForum()
 {

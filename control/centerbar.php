@@ -25,11 +25,11 @@
 
 			<div id="links">
 				<img src="images/links_ico.gif" style="float: left; margin: 12px 16px 12px 12px;">
-				<div style="float: right; width: 370px; margin-right: 10px; padding: 14px 0 6px 0; border-bottom: 1px solid #888; font-size: 16px; font-weight: 600; color: #fff;">Ссылки</div>
+				<div style="float: right; width: 370px; margin-right: 10px; padding: 14px 0 6px 0; border-bottom: 1px solid #888; font-size: 16px; font-weight: 600; color: #fff;"><?php trp('Links'); ?></div>
 				<div style="float: left; width: 370px; height: 2px; background: url(images/bg_links.gif) repeat-x;"></div>
-				<div class="link"><a href="#">Ссылка на википедию</a></div>
-				<div class="link"><a href="#">Ссылка на рейтинги</a></div>
-				<div class="link"><a href="#">Ссылка на скорости</a></div>
-				<div class="link"><a href="#">Другая ссылка</a></div>
+				<div class="link"><a href="#"><?php trp('Wikipedia'); ?></a></div>
+				<div class="link"><a href="#"><?php trp('Scores'); ?></a></div>
+				<div class="link"><a href="#"><?php trp('Speeds'); ?></a></div>
+				<!--<div class="link"><a href="#">Другая ссылка</a></div>-->
 			</div> <!--links-->
 		</div> <!--centerbar-->

@@ -18,14 +18,14 @@
 		$part = $def_part;
 	}
 
-	$where_am_i = $content_tree[$category]['']['']['caption'][$lang];
+	$where_am_i = tr($content_tree[$category]['']['']['caption']);
 
 	if ($section != '') 
 	{
-		$where_am_i .= ' :: '.$content_tree[$category][$section]['']['caption'][$lang];
+		$where_am_i .= ' :: '.tr($content_tree[$category][$section]['']['caption']);
 		if ($part != '') 
 		{
-			$where_am_i .= ' :: '.$content_tree[$category][$section][$part]['caption'][$lang];
+			$where_am_i .= ' :: '.tr($content_tree[$category][$section][$part]['caption']);
 		}
 	}
 ?>
