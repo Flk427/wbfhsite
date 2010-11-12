@@ -48,6 +48,10 @@
 			// NB: на халявном хостинге запрещены внешние коннекты
 
 			$result = Google_Translate_API::translate($glossary[$word][$def_lang], $def_lang, $lang);
+			
+			// Если всё плохо выводим строку на языке по-умлочанию
+			if ($result == '') $result = $glossary[$word][$def_lang];
+			
 			//$result = google_translate($glossary[$word][$def_lang], $def_lang, $lang);
 			//echo $glossary[$word][$def_lang]."###".$result."!!!";
 			// view the translated string
