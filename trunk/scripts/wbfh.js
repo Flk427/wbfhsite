@@ -1,3 +1,4 @@
+/*
 $(document).ready(function() {
 	$('#section_sel li a').mouseover(sectionOnMouseOver);
 	$('#section_sel li a').mouseout(sectionOnMouseOut);
@@ -13,30 +14,14 @@ $(document).ready(function() {
     });
 });
 
-/*
-function home()
-{
-	/-*
-	var i;
-	for(i=0;i<document.links.length;i++)
-	{
-		if(document.links[i].hash=="#home")
-		{
-			window.location.replace(document.links[i].href);
-			break;
-		}
-	}
-	*-/
-	window.location.replace("#");
-};
-*/
-
 function resetSearchInput()
 {
 	$('#search_input').css('font-style', 'normal');
 	if ($('#search_input').val() == 'искать на сайте')
 		$('#search_input').val('');
 };
+
+*/
 
 function sectionOnMouseOver()
 {

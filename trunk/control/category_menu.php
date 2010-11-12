@@ -54,7 +54,7 @@
 				<input type="hidden" name="aql" value="">
 				<input type="hidden" name="oq" value="">
 				<input type="hidden" name="gs_rfai" value="">
-				<button id="search_button" type="submit" title="Искать по сайту и форуму wbfree.net"><img src="images/search_ico.gif"></button>
+				<button id="search_button" type="submit" title="<?php trp('Search button'); ?>"><img src="images/search_ico.gif"></button>
 			</form>
 		</div> <!--search_panel-->
 	</div> <!--wrapper-->
