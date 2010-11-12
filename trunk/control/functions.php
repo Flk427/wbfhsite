@@ -1,6 +1,6 @@
 <?php
 
-	//require_once('google.translator.php');
+	require_once('google.translator.php');
 
 	function ContentToParams($content_str)
 	{
@@ -47,8 +47,8 @@
 			// если не знаем - спросим у Гугла
 			// NB: на халявном хостинге запрещены внешние коннекты
 
-			//$result = Google_Translate_API::translate($glossary[$word][$def_lang], $def_lang, $lang);
-			$result = google_translate($glossary[$word][$def_lang], $def_lang, $lang);
+			$result = Google_Translate_API::translate($glossary[$word][$def_lang], $def_lang, $lang);
+			//$result = google_translate($glossary[$word][$def_lang], $def_lang, $lang);
 			//echo $glossary[$word][$def_lang]."###".$result."!!!";
 			// view the translated string
 			//var_dump($str);
@@ -68,6 +68,9 @@
 	// Перевод с помощью Google Translate API
 	function google_translate($s_text, $s_lang, $d_lang)
 	{
+		//$url = "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&amp;q=".urlencode($s_text)."&amp;langpair=".urlencode($s_lang.'|'.$d_lang);
+		//$b = shell_exec("/usr/bin/curl -L $url");
+
 		$url = "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&amp;q=".urlencode($s_text)."&amp;langpair=".urlencode($s_lang.'|'.$d_lang);
 		$c = curl_init();
 		curl_setopt($c, CURLOPT_URL, $url);
@@ -75,6 +78,7 @@
 		//curl_setopt($c, CURLOPT_HEADER, 0);
 		//curl_setopt($c, CURLOPT_FOLLOWLOCATION, 1);
 		$b = curl_exec($c);
+		//echo $url."<br>".$b."!!!";
 		curl_close($c);
 
 		$json = json_decode($b, true);
