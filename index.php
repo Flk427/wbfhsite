@@ -124,5 +124,34 @@
 </div> <!--footer-->
 
 </body>
+
+<script type="text/javascript">
+<!--
+
+$(document).ready(function() {
+	$('#section_sel li a').mouseover(sectionOnMouseOver);
+	$('#section_sel li a').mouseout(sectionOnMouseOut);
+
+	$('#search_input').css('font-style', 'oblique');
+	$('#search_input').val('<?php trp("Search field"); ?>');
+	$('#search_input').mouseover(resetSearchInput);
+
+    jQuery('#wbcarousel').jcarousel({
+        // Configuration goes here
+        scroll: 1,
+        //wrap: "circular"
+    });
+});
+
+function resetSearchInput()
+{
+	$('#search_input').css('font-style', 'normal');
+	if ($('#search_input').val() == '<?php trp("Search field"); ?>')
+		$('#search_input').val('');
+};
+
+-->
+</script>
+
 </html>
 
