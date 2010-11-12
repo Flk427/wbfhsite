@@ -4,6 +4,12 @@
 //phpinfo();
 ?>
 
+<!--
+TODO:
+http://personne.newmail.ru/FreeHost/rps-brief.htm
+http://personne.newmail.ru/FreeHost/rps-detail.htm
+-->
+
 <?php
 	require_once('./control/init.php');
 	require_once('./control/config.php');
