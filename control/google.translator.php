@@ -33,7 +33,7 @@ class Google_Translate_API {
                         )
                 );
                 
-                echo "> $text $response <";
+		//echo "> $text $response <";
                 
                 if (preg_match("/{\"translatedText\":\"([^\"]+)\"/i", $response, $matches)) {
                         return self::_unescapeUTF8EscapeSeq($matches[1]);
