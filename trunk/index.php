@@ -135,8 +135,8 @@ http://personne.newmail.ru/FreeHost/rps-detail.htm
 <!--
 
 $(document).ready(function() {
-	$('#section_sel li a').mouseover(sectionOnMouseOver);
-	$('#section_sel li a').mouseout(sectionOnMouseOut);
+	$('#section_menu li a').mouseover(sectionOnMouseOver);
+	$('#section_menu li a').mouseout(sectionOnMouseOut);
 
 	$('#search_input').css('font-style', 'oblique');
 	$('#search_input').val('<?php trp("Search field"); ?>');

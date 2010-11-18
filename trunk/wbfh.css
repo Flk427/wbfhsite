@@ -37,6 +37,7 @@ h1 {
 	margin: 0 auto;
 	width: 990px;
 	height: 100%;
+	clear: both;
 }
 
 /* Заголовок */
@@ -212,9 +213,9 @@ h1 {
 /* Выбор раздела */
 
 #section_menu {
+	clear: both;
 	font-family: Arial;
 	font-size: 12px;
-	background-color: #fff;
 	height: 30px;
 }
 
@@ -251,6 +252,7 @@ h1 {
 	color: #dd3;
 	background: url(images/bg_screenshots.gif) repeat-x;
 	height: 240px;
+	clear: both;
 }
 
 #download {
@@ -459,7 +461,11 @@ h1 {
 }
 
 #tracks .track_name {
-	width: 178px; padding: 0; font-size: 10px; color: #fff; white-space: nowrap;
+	width: 178px;
+	padding: 0;
+	font-size: 10px;
+	color: #fff;
+	white-space: nowrap;
 }
 
 .track_name img {
