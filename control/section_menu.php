@@ -1,5 +1,4 @@
 	<div class="wrapper">
-		<div id="section_sel">
 
 <?php
 	if (count($content_tree[$category]) != 0)
@@ -40,5 +39,4 @@
 		unset($first_sect);
 	}
 ?>
-		</div> <!--section_sel-->
 	</div> <!--wrapper-->
