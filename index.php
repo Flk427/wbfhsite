@@ -29,8 +29,8 @@ http://personne.newmail.ru/FreeHost/rps-detail.htm
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link type="text/css" rel="StyleSheet" href="wbfh.css">
 	<link type="text/css" rel="StyleSheet" href="lightbox.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-	<!--<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>-->
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>-->
+	<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="scripts/wbfh.js"></script>
 	<script type="text/javascript" src="scripts/lightbox.js"></script>
 	<script type="text/javascript" src="scripts/jquery.jcarousel.min.js"></script>
