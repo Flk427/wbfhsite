@@ -214,8 +214,8 @@ h1 {
 
 #section_menu {
 	clear: both;
-	font-family: Arial;
-	font-size: 12px;
+	font-family: Arial !important, Georgia, "Times New Roman";
+	font-size: 12px !important;
 	height: 30px;
 }
 
