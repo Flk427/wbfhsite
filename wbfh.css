@@ -216,25 +216,22 @@ h1 {
 	clear: both;
 	font-family: Arial !important, Georgia, "Times New Roman";
 	font-size: 12px !important;
-	height: 30px;
+	height: 28px;
 }
 
-#section_menu a {
+#section_menu li a {
 	color: #000;
-}
-
-#section_menu .section_other_elem {
-	line-height: 10px;
-	padding: 10px 10px 10px 10px;
-}
-
-#section_menu a {
 	border-bottom: 1px solid;
 }
 
+#section_menu .section_other_elem {
+	line-height: 12px;
+	padding: 8px 10px 8px 10px;
+}
+
 #section_menu .section_first_elem {
-	line-height: 10px;
-	padding: 10px 10px 10px 10px;
+	line-height: 12px;
+	padding: 8px 10px 8px 10px;
 	margin: 0 0 0 5px;
 }
 
@@ -244,6 +241,16 @@ h1 {
 
 .sectionSelected {
 	background: url(images/bg_sub_menu_on.gif) repeat;
+}
+
+/* Opera */
+#section_menu li {
+	font-size: 12px;
+}
+
+/* Opera */
+#section_menu li a {
+	color: #000;
 }
 
 /* Инфо и скриншоты */
