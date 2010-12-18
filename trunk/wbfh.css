@@ -302,10 +302,18 @@ h1 {
 	float: left;
 	background-color: #858510;
 	color: #fff;
-	width: 100px;
-	padding: 10px 10px 0px 10px;
+	width: 104px;
+	padding: 10px 8px 0px 8px;
 	height: 23px;
 }
+
+/*
+#forum_selector img {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+*/
 
 #news_selector {
 	float: left;
@@ -337,6 +345,16 @@ h1 {
 	font-size: 11px;
 }
 
+/* For IE */
+.forum_topic {
+	padding: 7px;
+	background-color: #858510;
+	border-bottom: 1px solid #656500;
+	border-top: 1px solid #bb4;
+	font-size: 11px;
+	width: 226px;
+}
+
 #forum_topics h2 {
 	font-size: 11px; margin: 0;
 }
@@ -358,6 +376,7 @@ h1 {
 	float: left;
 	display: none;
 	border-top: 1px solid #bb4;
+	width: 240px;
 }
 
 /* Главный блок */
@@ -367,7 +386,7 @@ h1 {
 }
 
 #centerbar {
-	width: 500px;
+	width: 490px;
 	float: left;
 }
 
@@ -408,7 +427,7 @@ h1 {
 
 #rightbar .rating {
 	float: left;
-	width: 235px;
+	width: 220px;
 	margin-top: 20px;
 }
 
@@ -450,7 +469,7 @@ h1 {
 
 #tracks {
 	float: left;
-	width: 235px;
+	width: 220px;
 	margin-top: 20px;
 }
 

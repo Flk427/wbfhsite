@@ -1,6 +1,6 @@
 			<div id="rightbar">
 				<h1><?php trp('Top'); ?></h1>
-				<div style="width: 215px; height: 5px; background: #c80000;"></div>
+				<div style="width: 210px; height: 5px; background: #c80000;"></div>
 				<div class="rating">
 					<h2 style="margin: 0;"><img style="margin-right: 10px;" src="images/ico_pilots.gif"><?php trp('Pilots'); ?></h2>
 					<table>
