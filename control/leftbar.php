@@ -14,15 +14,15 @@
 
 			<!-- управление отображением тем форума или новостей -->
 			<div style="float: left; margin-top: 20px; border-bottom: 1px solid #656500;">
-				<div id="forum_selector" onclick="showForum()"><?php trp('On the forum'); ?> <img src="images/ico_forum.gif" style="float: right;"></div>
+				<div id="forum_selector" onclick="showForum()"><div style="float: left;"><?php trp('On the forum'); ?></div><img src="images/ico_forum.gif" style="float: right;"></div>
 				<div id="news_selector" onclick="showNews()"><?php trp('News'); ?></div>
 			</div>
 			<div id="forum_topics">
-				<div>
+				<div class="forum_topic">
 					<h2>15.07.2010</h2>
 					<a href="#">планы на открытую бету 1.68</a>
 				</div>
-				<div>
+				<div class="forum_topic">
 					<h2>15.07.2010</h2>
 					<a href="#">обсуждение проекта нового сайта wbfree.net</a>
 				</div>
