@@ -8,12 +8,12 @@
 	$glossary['Server address']['pt'] = 'Endereço do Server';
 	$glossary['Server address']['tr'] = 'Server adresi';
 
-	$glossary['Novices']['ru'] = 'Новичкам';
-	$glossary['Novices']['en'] = 'Novices';
-	$glossary['Novices']['de'] = 'Neuankömmlinge';
-	$glossary['Novices']['pl'] = 'Dla nowicjuszy';
-	$glossary['Novices']['pt'] = 'Novatos';
-	$glossary['Novices']['tr'] = 'Acemi';
+	$glossary['Newcomers']['ru'] = 'Новичкам';
+	$glossary['Newcomers']['en'] = 'Newcomers';
+	$glossary['Newcomers']['de'] = 'Neuankömmlinge';
+	$glossary['Newcomers']['pl'] = 'Dla nowicjuszy';
+	$glossary['Newcomers']['pt'] = 'Novatos';
+	$glossary['Newcomers']['tr'] = 'Acemi';
 
 	$glossary['Players']['ru'] = 'Игрокам';
 	$glossary['Players']['en'] = 'Players';
@@ -29,12 +29,12 @@
 	$glossary['Veterans']['pt'] = 'Veteranos';
 	$glossary['Veterans']['tr'] = 'Usta';
 
-	$glossary['What is it?']['ru'] = 'Что это такое?';
-	$glossary['What is it?']['en'] = 'What is it?';
-	$glossary['What is it?']['de'] = 'Was ist das?';
-	$glossary['What is it?']['pl'] = 'Co to takiego?';
-	$glossary['What is it?']['pt'] = 'O que é isso?';
-	$glossary['What is it?']['tr'] = 'Bu nedir?';
+	$glossary['About']['ru'] = 'Что это такое?';
+	$glossary['About']['en'] = 'About';
+	$glossary['About']['de'] = 'Was ist das?';
+	$glossary['About']['pl'] = 'Co to takiego?';
+	$glossary['About']['pt'] = 'O que é isso?';
+	$glossary['About']['tr'] = 'Bu nedir?';
 
 	$glossary['About the game']['ru'] = 'Об игре';
 	$glossary['About the game']['en'] = 'About the game';
@@ -71,26 +71,26 @@
 	$glossary['How to download and install']['pt'] = 'Instalação';
 	$glossary['How to download and install']['tr'] = 'Indirme ve kurma bilgileri';
 
-	$glossary['How to take-off']['ru'] = 'Как взлететь';
-	$glossary['How to take-off']['en'] = 'How to take-off';
-	$glossary['How to take-off']['de'] = 'Start';
-	$glossary['How to take-off']['pl'] = 'Jak wystartować?';
-	$glossary['How to take-off']['pt'] = 'Como decolar';
-	$glossary['How to take-off']['tr'] = 'Nasıl kalkış yapılır?';
+	$glossary['Flight instruction']['ru'] = 'Как взлететь';
+	$glossary['Flight instruction']['en'] = 'Flight instruction';
+	$glossary['Flight instruction']['de'] = 'Start';
+	$glossary['Flight instruction']['pl'] = 'Jak wystartować?';
+	$glossary['Flight instruction']['pt'] = 'Como decolar';
+	$glossary['Flight instruction']['tr'] = 'Nasıl kalkış yapılır?';
 
-	$glossary['Basic controls']['ru'] = 'Управление';
-	$glossary['Basic controls']['en'] = 'Basic controls';
-	$glossary['Basic controls']['de'] = 'Grundlegende Steuerung';
-	$glossary['Basic controls']['pl'] = 'Sterowani';
-	$glossary['Basic controls']['pt'] = 'Controles básicos';
-	$glossary['Basic controls']['tr'] = 'Basit kontroller';
+	$glossary['Controls']['ru'] = 'Управление';
+	$glossary['Controls']['en'] = 'Controls';
+	$glossary['Controls']['de'] = 'Grundlegende Steuerung';
+	$glossary['Controls']['pl'] = 'Sterowani';
+	$glossary['Controls']['pt'] = 'Controles básicos';
+	$glossary['Controls']['tr'] = 'Basit kontroller';
 
-	$glossary['Basic manoeuvres']['ru'] = 'Основные манёвры';
-	$glossary['Basic manoeuvres']['en'] = 'Basic manoeuvres';
-	$glossary['Basic manoeuvres']['de'] = 'Einfache Manöver';
-	$glossary['Basic manoeuvres']['pl'] = 'Podstawowe manewry';
-	$glossary['Basic manoeuvres']['pt'] = 'Manobras básicas';
-	$glossary['Basic manoeuvres']['tr'] = 'Basit manövreler';
+	$glossary['Basic flight maneuvers']['ru'] = 'Основные манёвры';
+	$glossary['Basic flight manoeuvres']['en'] = 'Basic flight manoeuvres';
+	$glossary['Basic flight manoeuvres']['de'] = 'Einfache Manöver';
+	$glossary['Basic flight manoeuvres']['pl'] = 'Podstawowe manewry';
+	$glossary['Basic flight manoeuvres']['pt'] = 'Manobras básicas';
+	$glossary['Basic flight manoeuvres']['tr'] = 'Basit manövreler';
 
 	$glossary['Basic tactics']['ru'] = 'Основы тактики';
 	$glossary['Basic tactics']['en'] = 'Basic tactics';
@@ -99,12 +99,12 @@
 	$glossary['Basic tactics']['pt'] = 'Taticas Básicas';
 	$glossary['Basic tactics']['tr'] = 'Basit taktikler';
 
-	$glossary['Airplanes']['ru'] = 'Самолёты';
-	$glossary['Airplanes']['en'] = 'Airplanes';
-	$glossary['Airplanes']['de'] = 'Flugzeuge';
-	$glossary['Airplanes']['pl'] = 'Samoloty';
-	$glossary['Airplanes']['pt'] = 'Aviões';
-	$glossary['Airplanes']['tr'] = 'Uçaklar';
+	$glossary['Aircraft']['ru'] = 'Самолёты';
+	$glossary['Aircraft']['en'] = 'Aircraft';
+	$glossary['Aircraft']['de'] = 'Flugzeuge';
+	$glossary['Aircraft']['pl'] = 'Samoloty';
+	$glossary['Aircraft']['pt'] = 'Aviões';
+	$glossary['Aircraft']['tr'] = 'Uçaklar';
 
 	$glossary['RPS briefly']['ru'] = 'RPS кратко';
 	$glossary['RPS briefly']['en'] = 'RPS briefly';
@@ -155,12 +155,12 @@
 	$glossary['What is FreeHost?']['pt'] = 'What is FreeHost?';
 	$glossary['What is FreeHost?']['tr'] = 'What is FreeHost?';
 
-	$glossary['Standard pack']['ru'] = 'Стандартная сборка';
-	$glossary['Standard pack']['en'] = 'Standard pack';
-	$glossary['Standard pack']['de'] = 'Standardpaket';
-	$glossary['Standard pack']['pl'] = 'Pakiet podstawowy';
-	$glossary['Standard pack']['pt'] = 'Pack Padrão';
-	$glossary['Standard pack']['tr'] = 'Standart paket';
+	$glossary['Background information']['ru'] = 'Стандартная сборка';
+	$glossary['Background information']['en'] = 'Background information';
+	$glossary['Background information']['de'] = 'Standardpaket';
+	$glossary['Background information']['pl'] = 'Pakiet podstawowy';
+	$glossary['Background information']['pt'] = 'Pack Padrão';
+	$glossary['Background information']['tr'] = 'Standart paket';
 
 	$glossary['Developer']['ru'] = 'Разработчик';
 	$glossary['Developer']['en'] = 'Developer';
@@ -295,12 +295,12 @@
 	$glossary['Speeds']['pt'] = 'Velocidade';
 	$glossary['Speeds']['tr'] = 'Hız tabelaları';
 
-	$glossary['Top']['ru'] = 'На вершине';
-	$glossary['Top']['en'] = 'Top';
-	$glossary['Top']['de'] = 'Top-Ränge';
-	$glossary['Top']['pl'] = 'Najlepsi';
-	$glossary['Top']['pt'] = 'Topo';
-	$glossary['Top']['tr'] = 'Top skorlar';
+	$glossary['Leaderboard']['ru'] = 'На вершине';
+	$glossary['Leaderboard']['en'] = 'Leaderboard';
+	$glossary['Leaderboard']['de'] = 'Top-Ränge';
+	$glossary['Leaderboard']['pl'] = 'Najlepsi';
+	$glossary['Leaderboard']['pt'] = 'Topo';
+	$glossary['Leaderboard']['tr'] = 'Top skorlar';
 
 	$glossary['Pilots']['ru'] = 'Пилоты';
 	$glossary['Pilots']['en'] = 'Pilots';
@@ -309,26 +309,26 @@
 	$glossary['Pilots']['pt'] = 'Pilotos';
 	$glossary['Pilots']['tr'] = 'Pilotlar';
 
-	$glossary['Squads']['ru'] = 'Эскадрилии';
-	$glossary['Squads']['en'] = 'Squads';
-	$glossary['Squads']['de'] = 'Staffeln';
-	$glossary['Squads']['pl'] = 'Dywizjony';
-	$glossary['Squads']['pt'] = 'Esquadrões';
-	$glossary['Squads']['tr'] = 'Filolar';
+	$glossary['Squadrons']['ru'] = 'Эскадрилии';
+	$glossary['Squadrons']['en'] = 'Squadrons';
+	$glossary['Squadrons']['de'] = 'Staffeln';
+	$glossary['Squadrons']['pl'] = 'Dywizjony';
+	$glossary['Squadrons']['pt'] = 'Esquadrões';
+	$glossary['Squadrons']['tr'] = 'Filolar';
 
-	$glossary['Best tracks']['ru'] = 'Лучшие треки';
-	$glossary['Best tracks']['en'] = 'Best tracks';
-	$glossary['Best tracks']['de'] = 'Die besten Tracks';
-	$glossary['Best tracks']['pl'] = 'Najlepsze tracki';
-	$glossary['Best tracks']['pt'] = 'Melhores tracks';
-	$glossary['Best tracks']['tr'] = 'En iyi filmler';
+	$glossary['Top clips']['ru'] = 'Лучшие треки';
+	$glossary['Top clips']['en'] = 'Top clips';
+	$glossary['Top clips']['de'] = 'Die besten Tracks';
+	$glossary['Top clips']['pl'] = 'Najlepsze tracki';
+	$glossary['Top clips']['pt'] = 'Melhores tracks';
+	$glossary['Top clips']['tr'] = 'En iyi filmler';
 
-	$glossary['All tracks']['ru'] = 'все треки';
-	$glossary['All tracks']['en'] = 'all tracks';
-	$glossary['All tracks']['de'] = 'alle tracks';
-	$glossary['All tracks']['pl'] = 'wszystkie tracki';
-	$glossary['All tracks']['pt'] = 'todas tracks';
-	$glossary['All tracks']['tr'] = 'bütün filmler';
+	$glossary['View all']['ru'] = 'Все треки';
+	$glossary['View all']['en'] = 'View all';
+	$glossary['View all']['de'] = 'Alle tracks';
+	$glossary['View all']['pl'] = 'Wszystkie tracki';
+	$glossary['View all']['pt'] = 'Todas tracks';
+	$glossary['View all']['tr'] = 'Bütün filmler';
 
 	$glossary['Design']['ru'] = 'дизайн';
 	$glossary['Design']['en'] = 'design';

@@ -26,10 +26,10 @@
 	$def_part = '';
 	$def_lang = 'ru';
 
-	$content_tree['newbee']['']['']['caption'] = 'Novices';
+	$content_tree['newbee']['']['']['caption'] = 'Newcomers';
 	$content_tree['newbee']['']['']['content'] = 'newbee_about.html';
 
-	$content_tree['newbee']['about']['']['caption'] = 'What is it?';
+	$content_tree['newbee']['about']['']['caption'] = 'About';
 	$content_tree['newbee']['about']['']['content'] = 'newbee_about.html';
 	$content_tree['newbee']['about']['']['nobr'] = '0';
 
@@ -48,19 +48,19 @@
 	$content_tree['newbee']['download']['']['caption'] = 'How to download and install';
 	$content_tree['newbee']['download']['']['content'] = 'newbee_download.html';
 
-	$content_tree['newbee']['takeoff']['']['caption'] = 'How to take-off';
+	$content_tree['newbee']['takeoff']['']['caption'] = 'Flight instruction';
 	$content_tree['newbee']['takeoff']['']['content'] = 'newbee_takeoff.html';
 
-	$content_tree['newbee']['controls']['']['caption'] = 'Basic controls';
+	$content_tree['newbee']['controls']['']['caption'] = 'Controls';
 	$content_tree['newbee']['controls']['']['content'] = 'newbee_controls.html';
 
-	$content_tree['newbee']['manoeuvre']['']['caption'] = 'Basic manoeuvres';
+	$content_tree['newbee']['manoeuvre']['']['caption'] = 'Basic flight manoeuvres';
 	$content_tree['newbee']['manoeuvre']['']['content'] = 'newbee_manoeuvre.html';
 
 	$content_tree['newbee']['tactics']['']['caption'] = 'Basic tactics';
 	$content_tree['newbee']['tactics']['']['content'] = 'newbee_tactics.html';
 
-	$content_tree['newbee']['aircrafts']['']['caption'] = 'Airplanes';
+	$content_tree['newbee']['aircrafts']['']['caption'] = 'Aircraft';
 	$content_tree['newbee']['aircrafts']['']['content'] = 'newbee_aircrafts.html';
 
 	$content_tree['newbee']['aircrafts']['rps-brief']['caption'] = 'RPS briefly';

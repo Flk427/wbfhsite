@@ -69,7 +69,7 @@ http://personne.newmail.ru/FreeHost/rps-detail.htm
 		<div id="download">
 			<table>
 				<tr><td style="font-size: 28px; line-height: 28px; padding-top: 15px;">War<span style="font-weight: 600;">Birds & FHL</span></td></tr>
-				<tr><td style="font-size: 14px; padding-bottom: 4px;"><?php trp('Standard pack'); ?></span></td></tr>
+				<tr><td style="font-size: 14px; padding-bottom: 4px;"><?php trp('Background information'); ?></span></td></tr>
 				<tr><td class="about"><span class="about_caption"><?php trp('Developer'); ?>:</span> <span class="about_value">iEntertainment Network</span></span></td></tr>
 				<tr><td class="about"><span class="about_caption"><?php trp('Publisher'); ?>:</span> <span class="about_value">Atari</span></td></tr>
 				<tr><td class="about"><span class="about_caption"><?php trp('Year'); ?>:</span> <span class="about_value">2001</span></td></tr>
