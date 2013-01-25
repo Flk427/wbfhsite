@@ -86,11 +86,11 @@
 	$glossary['Controls']['tr'] = 'Basit kontroller';
 
 	$glossary['Basic flight maneuvers']['ru'] = 'Основные манёвры';
-	$glossary['Basic flight manoeuvres']['en'] = 'Basic flight manoeuvres';
-	$glossary['Basic flight manoeuvres']['de'] = 'Einfache Manöver';
-	$glossary['Basic flight manoeuvres']['pl'] = 'Podstawowe manewry';
-	$glossary['Basic flight manoeuvres']['pt'] = 'Manobras básicas';
-	$glossary['Basic flight manoeuvres']['tr'] = 'Basit manövreler';
+	$glossary['Basic flight maneuvers']['en'] = 'Basic flight maneuvers';
+	$glossary['Basic flight maneuvers']['de'] = 'Einfache Manöver';
+	$glossary['Basic flight maneuvers']['pl'] = 'Podstawowe manewry';
+	$glossary['Basic flight maneuvers']['pt'] = 'Manobras básicas';
+	$glossary['Basic flight maneuvers']['tr'] = 'Basit manövreler';
 
 	$glossary['Basic tactics']['ru'] = 'Основы тактики';
 	$glossary['Basic tactics']['en'] = 'Basic tactics';
