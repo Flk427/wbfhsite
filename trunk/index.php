@@ -76,7 +76,7 @@ http://personne.newmail.ru/FreeHost/rps-detail.htm
 				<tr><td class="about"><span class="about_caption"><?php trp('Genre'); ?>:</span> <span class="about_value"><?php trp('Avia simulators'); ?></span></td></tr>
 				<tr><td class="about"><span class="about_caption"><?php trp('Platform'); ?>:</span> <span class="about_value"><? trp('Windows'); ?></span></td></tr>
 				<tr><td class="about"><span class="about_caption"><?php trp('Size'); ?>:</span> <span class="about_value">50 <?php trp('Mb'); ?></span></td></tr>
-				<tr><td style="padding-top: 15px;"><a href="http://whereat.wbfree.net/wb.zip"><img style="cursor:pointer; border: 0 none;" src="images/download_button.gif" alt="<?php trp('Download free'); ?>" title="<?php trp('Download free'); ?>"/></a></td></tr>
+				<tr><td style="padding-top: 15px;"><a href="http://whereat.wbfree.net/wb.zip"><img style="cursor:pointer; border: 0 none;" src="images/download_button_<?php if ($lang != '') {echo $lang;} else {echo 'en';} ?>.gif" alt="<?php trp('Download free'); ?>" title="<?php trp('Download free'); ?>"/></a></td></tr>
 			</table>
 		</div> <!--download-->
 		<div id="shots">

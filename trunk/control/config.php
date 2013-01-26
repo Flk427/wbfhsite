@@ -54,8 +54,8 @@
 	$content_tree['newbee']['controls']['']['caption'] = 'Controls';
 	$content_tree['newbee']['controls']['']['content'] = 'newbee_controls.html';
 
-	$content_tree['newbee']['manoeuvre']['']['caption'] = 'Basic flight manoeuvres';
-	$content_tree['newbee']['manoeuvre']['']['content'] = 'newbee_manoeuvre.html';
+	$content_tree['newbee']['maneuvers']['']['caption'] = 'Basic flight maneuvers';
+	$content_tree['newbee']['maneuvers']['']['content'] = 'newbee_maneuvers.html';
 
 	$content_tree['newbee']['tactics']['']['caption'] = 'Basic tactics';
 	$content_tree['newbee']['tactics']['']['content'] = 'newbee_tactics.html';
