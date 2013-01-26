@@ -60,8 +60,8 @@
 	$content_tree['newbee']['tactics']['']['caption'] = 'Basic tactics';
 	$content_tree['newbee']['tactics']['']['content'] = 'newbee_tactics.html';
 
-	$content_tree['newbee']['aircrafts']['']['caption'] = 'Aircraft';
-	$content_tree['newbee']['aircrafts']['']['content'] = 'newbee_aircrafts.html';
+	$content_tree['newbee']['aircraft']['']['caption'] = 'Aircraft';
+	$content_tree['newbee']['aircraft']['']['content'] = 'newbee_aircraft.html';
 
 	$content_tree['newbee']['aircrafts']['rps-brief']['caption'] = 'RPS briefly';
 	$content_tree['newbee']['aircrafts']['rps-brief']['content'] = 'http://personne.newmail.ru/FreeHost/rps-brief.htm';
