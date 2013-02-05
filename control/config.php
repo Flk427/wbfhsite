@@ -24,7 +24,7 @@
 	$def_category = 'newbee';
 	$def_section = 'about';
 	$def_part = '';
-	$def_lang = 'ru';
+	$def_lang = 'en';
 
 	$content_tree['newbee']['']['']['caption'] = 'Newcomers';
 	$content_tree['newbee']['']['']['content'] = 'newbee_about.html';
