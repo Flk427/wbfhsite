@@ -1,5 +1,24 @@
 		<div id="centerbar">
 			<div id="content">
+<!--
+
+Test of separating large text to pages or subsections.
+
+<?php
+	if (count($content_tree[$category][$section]) != 0)
+	{
+		echo '			<ul>'."\n";
+
+		foreach($content_tree[$category][$section] as $tmp_part => $sub_sect_val)
+		{
+			if ($tmp_part == '') continue;
+			$url = ContentToParams($content_tree[$category][$section][$tmp_part]['content']);
+			echo "				<li><a href='$url'>".tr($content_tree[$category][$section][$tmp_part]['caption'])."</a></li>\n";
+		}
+		echo "			</ul\n>";
+	}
+?>
+-->
 	<?php
 		// вывести файл
 		// В случае возникновения ошибки вернёт FALSE, если только функция не была вызвана как @readfile(), и выведет сообщение об ошибке.
